@@ -20,11 +20,13 @@ $db['db']		= "phpindonesia";
 5. Untuk login ke administrator, tambahkan **/po-adminboard** di akhir url
 6. Untul data login sementara :
 
-* Username : **admweb**
-* Password : **phpindo_888**
+```
+Username : **admweb**
+Password : **phpindo_888**
+```
 
 7. Untuk proses development baca dokomentasi di sini : http://docs.popojicms.org
 
 ---
 
-Beberapa content masih dalam tahap pembuatan dan pengumpulan data
+Beberapa content masih dalam tahap development dan pengumpulan data
