@@ -1,7 +1,7 @@
 # phpindonesia.or.id-profile
 Website Resmi PHP Indonesia Community
 
-### Cara memasang pada localhost untuk proses development
+### Cara pemasangan pada localhost untuk proses development
 
 1. Buat database baru (mysql)
 2. Import database dengan file phpindonesia.sql
@@ -21,8 +21,8 @@ $db['db']		= "phpindonesia";
 6. Untul data login sementara :
 
 ```
-Username : **admweb**
-Password : **phpindo_888**
+Username : admweb
+Password : phpindo_888
 ```
 
 7. Untuk proses development baca dokomentasi di sini : http://docs.popojicms.org
