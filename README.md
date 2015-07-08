@@ -6,7 +6,7 @@ Website Resmi PHP Indonesia Community
 1. Buat database baru (mysql)
 2. Import database dengan file phpindonesia.sql
 3. Konfigurasi pada server local untuk mengaktifkan mod_rewrite
-4.  Edit file konfigurasi pada po-library/po-config.php
+4. Edit file konfigurasi pada po-library/po-config.php
 
 	```php
 	$db['host']		= "localhost";
@@ -25,7 +25,9 @@ Website Resmi PHP Indonesia Community
 	Password : phpindo_888
 	```
 
-7. Untuk proses development baca dokomentasi di sini : http://docs.popojicms.org
+7. Login ke po-adminboard kemudian masuk ke menu setting/pengaturan lalu sesuaikan **Web Url** dengan url yg aktif. Ingat di belakang url tidak boleh ada tanda "/"
+
+8. Untuk proses development baca dokomentasi di sini : http://docs.popojicms.org
 
 ---
 
