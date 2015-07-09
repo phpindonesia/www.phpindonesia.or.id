@@ -1,0 +1,51 @@
+Meet ZEND w/ IBM (MZI)
+Wednesday, February 4 at 16:00 - 19:00
+Avnet Datamation Solution Jl. Abdul Muis No. 40 (Gedg. BSG), lt.6
+
+Keterangan Tambahan baca di comment... WAJIB REGISTRASI DI LINK DI BAWAH INI
+
+http://avnet.me/IBMZENDforPHPCommunity
+
+=============================================
+Agenda : 
+Overview about PHP-Indonesia Community
+About Zend Indonesia (by Zend ID
+Zend and IBM (by ZEND WW team) 
+Opportunities & Benefits (case-studies) 
+PHP on IBM Server (POWER Linux): what & why & how 
+Overview of Solution & Services Portfolio 
+Q & A 
+Dinner (in-room) 
+
+
+Nara Sumber : 
+
+1. Mike Pavlak 
+Has been working with IBM midrange solutions since 1992 & IBM Mainframes before that. 
+After years of developing applications using RPG, CL and PHP he managed IT development and IT System at manufacturer. 
+Mike joined Zend Technologies as a SOLUTION CONSULTANT, working together with the IBM team since 2008 and enjoys 
+helping IBM-i customers explore PHP as a state of the art solution for application modernization. 
+In addition to several roles like teaches PHP classes part time at Moraine Valley Community College in Suburban Chicago. 
+Mike lives in Chicago, married, and with dozens of animal as pets. 
+
+
+
+2. Vishnu Raned is the Regional Vice President – Asia Pacific, Japan & Emerging Markets at Zend Technologies Inc., - the PHP company. 
+Recognized IT executive with a successful track record of building and leading High Performance Enterprise Software sales organizations 
+in Asia-Pacific. He specializes in ** building business from ground zero** for companies looking to establish and grow in the Asia-Pacific 
+region. His international experience spans across the world with a track record of aggressive growth, turnarounds and long term client 
+relationships. Vishnu lives in Bangalore, married, endurance cycling and running enthusiast. 
+
+
+
+Dimohonkan ketersediaan-nya, semoga dengan acara ini harapannya bisa menjadi awalan yang lebih baik untuk kerjasama di Indonesia untuk kedepannya.. 
+
+
+
+
+Thx & BR, 
+Fiertra Cahya 
+Server Solution Product Manager 
+IBM Indonesia
+
+-----------------------------------------------

@@ -30,6 +30,7 @@ Website Resmi PHP Indonesia Community
 8. Untuk proses development baca dokomentasi di sini : http://docs.popojicms.org
 
 9. Untuk cara kerja github baca di sini : https://github.com/phpindonesia/phpindonesia.or.id-profile/blob/master/git-workflow.md
+
 ---
 
 Beberapa content masih dalam tahap development dan pengumpulan data
@@ -38,5 +39,6 @@ Beberapa content masih dalam tahap development dan pengumpulan data
 
 **Changelog** :
 
+* 10 Juli 2015 : Menambahkan upload facebook group event via po-component/po-event/ #1
 * 9 Juli 2015 : Menambahkan git-workflow.md dan update README.md
 * 8 Juli 2015 : Core awal untuk menjadi role model.

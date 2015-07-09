@@ -52,7 +52,7 @@
 				<section id="primary" class="content-full-width">
 					<article class="blog-post">
 						<div class="entry-body">
-							<?=$content;?>
+							<?=nl2br($content);?>
 						</div>
 					</article>
 				</section>
