@@ -1,0 +1,720 @@
+Meetup 1 PHP Indonesia - SUMBAR - Kota Bukittinggi
+Monday, December 30, 2013 at 16:00
+KAWA DAUN INDOMAL, Simpang Taluak BUKITTINGGI
+
+Meetup PHP indonesia wilayah sumbar mengadakan pertemuan dengan rekan-rekan penggiat IT di Bukittinggi, dengan
+
+Bahasan : perkenalan, temu ramah, sharing seputar IT, rencana pembentukan perwakilan PHP indonesia di Kota Bukittinggi
+
+lokasi : Kawa Daun INDOMAL, Simpang taluak, Bukittinggi
+waktu : jam 16.00
+
+salam hormat,
+pengurus PHP Indonesia Sumatera Barat
+
+-----------------------------------------------
+
+Meetup PHP Indonesia - SUMBAR - Kota PADANG
+Sunday, December 29, 2013 at 14:00
+Nuno's Kedai Kopi
+Jalan Rasuna Said No. 97, Padang 25114
+
+Sharing, ngobrol, silahturahmi
+
+-----------------------------------------------
+
+[JAKARTA] PHP Indonesia Meet Up Gratis - Tanggal 21 Desember 2013, Di GEPI World Ciputra
+Saturday, December 21, 2013 at 09:00
+Ciputra World Jakarta
+Jalan Prof. Dr. Satrio,, Jakarta, Indonesia 12930
+
+[JAKARTA] PHP Indonesia Meet Up Gratis - Tanggal 21 Desember 2013, di 
+
+Ciputra GEPI Incubator
+
+DBS Tower 9th Floor, Ciputra World I
+Jl. Prof. Dr. Satrio Kav. 3-5
+Jakarta, Indonesia 12940
+
+
+Tema : "Technopreneur dan Peningkatan Profesionalisme Programer"
+
+Pendaftaran di : https://docs.google.com/forms/d/1ppa4UNCehfIUgv8tjGe0Fk5bYhA7VsPSGdwWJcaKRXE/viewform
+
+Host dan Moderator Female Team dan Nur Hidayat
+
+Pembicara :
+1. Rama Yurindra - PHP Indonesia menuju profesionalisme
+2. Microsoft Indonesia
+3. Aulia "Ollie" Halimatussadiah : 
+"Bagaimana Wanita Menjadi Technopreneur - case study nulisbuku.com"
+4. Natali Ardianto : 
+"Bagaimana membangun dan mengelola Startup - Case Study Tiket.com"
+5. Komunigrafik 
+"Bagaimana menyamakan visi dan misi dan bersinergi membentuk Usaha bersama"
+6. Oka Prinarjaya dan La Jayuhni Yarsyah
+"Bagaimana mengemas jasa web programing bernilai jual tinggi - Case study Pembuatan web Company Profile bernilai jual Rp 40 Juta s/d 150 Juta".
+
+-----------------------------------------------
+
+9th Meetup PHP Indonesia Surabaya
+Saturday, November 30, 2013 at 10:00
+Stikom Surabaya
+JL. Kedung Baruk 98, Surabaya, Indonesia 60298
+
+Provisioning and Continuous Integration for PHP Application.
+
+Tempat : Ruang SG (Serba Guna) STIKOM Surabaya
+
+Alamat : JL. Raya Kedung Baruk, No. 98, Surabaya, Indonesia
+
+Waktu : Sabtu, 30 November 2013 pukul 10.00 - selesai
+
+HTM : Rp 10.000 (Bayar di tempat)
+
+Fasilitas : Snack, Doorprize, Networking, Knowledge, dll
+
+Speaker : Mochamad Gufron Efendi 
+
+PENDAFTARAN
+sms ke: 089677006638
+
+-----------------------------------------------
+
+PHP Indonesia Depok - 1st Meetup
+Saturday, November 30, 2013 at 08:00 - 12:30
+Code Margonda
+Jl. Margonda Raya No. 349, Depok 16426
+
+CMS vs Framework 
+=======================
+Registrasi: http://goo.gl/ZRq9RF
+Diharapkan melakukan registrasi terlebih dahulu karena keterbatasan tempat maksimum 40 peserta
+
+Tempat: Code Margonda, Depok
+Alamat: JL. Margonda Raya 349. Depok, Jawa Barat 
+- Samping Mal Detos, satu ruko dengan Vanetta System
+
+Hari: Sabtu, 30 November 2013 
+Pukul: 08.00 - 12:30
+
+HTM : Rp 20.000 (umum) - Rp 15.000 (mahasiswa/pelajar)
+Fasilitas: Snack, Doorprize, Networking, Knowledge, dll
+
+Rundown Workshop:
+08:00 - 08:30 Registrasi
+08:30 - 08:40 Pembukaan
+08:40 - 09:10 Framework atau CMS, pilih mana? 
+09:10 - 09:50 Fx: CodeIgniter - Arieditya Pramadyana Dh.
+09:50 - 10:30 Fx: Laravel Framework - Nurcahyo Al Hidayah
+10:30 - 11:10 CMS: Wordpress - Gunawan Mujur Wibisono
+11:10 - 11:50 CMS: Drupal - Ananto Wibisono
+11:50 - 12:30 Tanya Jawab dan Ramah Tamah
+
+(y)
+
+-----------------------------------------------
+
+Mini Meetup PHP Indonesia - Riau
+Sunday, November 10, 2013 at 14:30
+Rendezvous Food Court Cafe
+Jalan Sumatera No.56 Pekanbaru, Pekanbaru
+
+PHP Indonesia Regional Riau mengundang teman-teman anggota PHP Indonesia untuk hadir pada mini meetup bertema Yii Framework dan Ajax CRUD Application.
+
+Acara akan diadakan di :
+Tempat : Rendezvous Food Court Cafe, Jalan Sumatera Pekanbaru
+Waktu : Pukul 14.30 sampai selesai
+
+Materi :
+CRUD menggunakan Ajax oleh Muhammad Saleh Hafizh Fajri
+Pengenalan Yii Framework oleh Rully Ramanda
+
+Tempat terbatas, bagi teman2 yang ingin hadir, mohon untuk konfirmasi sebelum tanggal 7 Nopember 2013.
+
+CP :
+Hafizh : 0852 7837 3002
+Rully : 0831 8739 7072
+
+Terimakasih..
+
+-----------------------------------------------
+
+Workshop PHP Mysql - PHP Indonesia Palopo
+Sunday, November 10, 2013 at 08:00 in UTC+08
+Palopo
+
+Workshop Implementasi PHP dan MySql, Bagi teman-teman yang berdomisili di Kota Palopo dan Sekitarnya, ayo bergabung...
+
+-----------------------------------------------
+
+PHPIndonesia Surabaya 8th Meetup
+Saturday, October 26, 2013 at 12:20
+Jagoan Hosting Indonesia
+Surabaya, Indonesia
+
+Meetup 8 PHP Indonesia Surabaya
+
+Tema: Silex Framework
+Pemateri: Glend Maatita
+
+Tempat:
+Jagoan Hosting
+Jalan Jemur Andayani 50
+Ruko surya inti permata blok C17-19
+Surabaya, Jawa Timur
+
+Waktu:
+Sabtu, 26 Oktober2013
+12.30 - Selesai
+
+Cara Daftar:
+kirim: MEET8#NAMA#EMAIL
+ke 0896 7700 6638 (Iema)
+
+-----------------------------------------------
+
+First Meetup PHP Indonesia Bogor
+Sunday, October 13, 2013 at 10:00
+Bogor
+
+Gathering dan Sosialisasi PHP Indonesia Bogor.
+Contact Person: 
+Nurcahyo al Hidayah: 0857 7827 5565
+Arieditya:
+08 1212 880 555
+0813 1458 3403
+
+-----------------------------------------------
+
+PHP Indonesia - Seminar Tekhnologi - Sukses Menjadi Programer
+Saturday, October 5, 2013 at 15:00
+Radar Kediri
+Gampengrejo, Jawa Timur, Indonesia 64112
+
+Kawan-kawan yang berdomisili di Kediri dan daerah Jawa Timur, di tunggu kehadirannya pada event PHP Indonesia di Kediri Jawa Timur
+
+Acara : Seminar Tekhnolog
+Tema : Sukses Menjadi Web Programer
+Panelis : Teguh Andriyanto
+Tanggal : 5 Oktober 2013
+Jam : 15.00 WIB s/d selesai
+Lokasi : Brantas Room Radar Kediri - Jl. Raya Gampeng no. 45
+Biaya : Rp 10.000
+Fasilitas : Sertifikat & Door Prize
+Informasi Pendaftaran :
+- Kantor Radar Kediri
+- Kantor Pos Besar Kediri
+- Pendaftaran bisa di lokasi acara pada hari H
+- Tempat terbatas
+
+Kontak :
+- Hori Revens 085735575807
+- Niruz 08999933403
+
+-----------------------------------------------
+
+7th Meetup PHP Indonesia Surabaya
+Saturday, September 28, 2013 at 10:00 - 14:00
+UPN VETERAN SURABAYA
+Jl. Raya Gunung Anyar, Surabaya, Indonesia 60294
+
+Topic : Composer Explained
+Speaker : Taufan Aditya 
+
+Tempat:
+UPN "Veteran" 
+Ruang Ir. Soekamto 
+Gedung Giri Reka Lt 4 
+Fakultas Teknologi Industri 
+(FTI) UPN "Veteran" 
+Jatim Surabaya
+
+Waktu
+Sabtu, 28 September 2013
+Pukul 10.00 - 14.00
+
+HTM: Rp 10.000
+Fasilitas: Snack, Doorprize, Ilmu, Network
+
+Contact Person: 
+Iema (089 677 0066 38)
+Alon (0857 3348 2471)
+
+-----------------------------------------------
+
+Temu Kenal Dengan PHP Sumatera Utara (Buka Puasa Bersama)
+Sunday, July 28, 2013 at 17:00
+Ayam Penyet Jakarta
+
+Yuk temu kenal dengan teman teman PHP Sumatera Utara, dengan acara buka bersama. Sambil mempererat tali silaturahmi. dan berbagi pengalaman di bidang web site. 
+
+
+Alamat : Jl Dr Manyur (USU) 
+Ayam Penyet Jakarta, (dekat dengan texas)
+
+Informasi 
+
+Eko Surya : 085760020903
+Ramadhani Pratama : 085297788310
+Fitria Wulandari :08988689805
+
+Biaya : Rp.25.000 / Orang
+
+-----------------------------------------------
+
+ENTERPRISE APPLICATION & ZEND TECHNOLOGY ON IBM MACHINE
+Saturday, July 27, 2013 at 13:00 - 18:30
+PT. IBM Indonesia - The Plaza Office Tower
+Jakarta, Indonesia 10230
+
+Panelis :
+Peter Jack Kambey - PHP ERP Indonesia
+Awaludin Rahmadi - Zend Technology
+
+Host :
+Rama Yurindra
+
+Lokasi :
+The Plaza Office Tower lantai 16, Jl MH Thamrin Kav 28 - 30, Jakarta Pusat, Dekat bundaran HI
+
+Registrasi Hub (Sertakan Email, Usia dan No Telp Kantor) :
+La Jayuhni Yarsyah : 0898 -907-4014
+Ari Ratic : 0896-632- 80-213
+
+-----------------------------------------------
+
+6th Meetup PHP Indonesia Surabaya
+Saturday, July 20, 2013 at 15:30
+Jagoan Hosting Indonesia
+Surabaya, Indonesia
+
+Bagi kawan-kawan PHP'ers Surabaya ayo ikutan acara Ngabuburit dan buka puasa bersama PHP Indonesia
+Tema : GIT & GITHUB - Pegenalan GIT dan kolaborasi dengan GITHUB
+
+Panelis : M Taufik
+
+Waktu : Hari sabtu 20 Juli 2013 , pukul 15.30 s/d selesai
+Lokasi : Jagoan Hosting, Jl Jemur Andayani 50, ruko surya inti permata blok c17-C19, Surabaya Jawa Timur
+
+Fasilitas : Takjil, buka puasa bersama, networking dan sertfikat
+Biaya : Rp. 15.000
+Seat terbatas 40 orang
+
+Pendaftaran Hub :
+April 0857 2534 4024
+Iema : 0896 7700 6638
+
+PENDAFTARAN DITUTUP
+
+-----------------------------------------------
+
+2nd Meet Up dan Workshop PHP Indonesia Wilayah Sumbagut
+Saturday, June 29, 2013 at 16:00 - 17:30
+Padang Bulan,Medan.Sumatera Utara
+
+Hari/Tanggal: 29 Juni 2013
+Pukul : 16.00 WIB
+Durasi : 1,5 jam
+Materi: Web Animation with HTML5 & CSS3
+Pemateri: Padlian Chairi (DC's Programmer & KulinerSumut)
+Biaya :Rp.15.000 (include snack)
+Peserta: max.20 Orang.
+
+Pendaftaran bisa langsung menuju ke 
+Batagram Office Jl.Dwi Warna No.10 Pasar 6 Pd.bulan Medan
+Dhuo Creative Office Jl.Dr.Mansyur Gg Saudara no.1 Medan (Depan BNI USU)
+
+Cp. 
+085297788310 (Dhani)
+085760020903 (Eko)
+
+-----------------------------------------------
+
+5th Meetup PHP Indonesia Surabaya
+Saturday, June 29, 2013 at 12:30 - 17:00
+Untag
+
+~Meet Up 5th Surabaya PHP Indonesia 
+with 
+Himpunan Mahasiswa Teknik Informatika Universitas 17 Agustus 1945 Surabaya~
+
+Tema : Building Scalable Web-Based SMS Gateway System
+
+Panelis
+1. Deory Pandu Putra
+2. Taufan Aditya
+3. Glend Maatita
+
+29 Juni 2013
+12.30 - 17.00 WIB
+Graha Wiyata Lantai 9
+Jalan Semolowaru 45 (Untag Surabaya)
+
+HTM : Rp 5000
+Sertifikat, Snack,Seminar Kit,Doorprize
+
+CP 
+Ari : 081554442518
+April : 085725344024
+
+CARA PENDAFTARAN
+masuk ke http://dev.phpindonesia.net/ lihat kanan bawah lakukan pendaftaran di kolom tersebut
+pembayaran bisa di lakukan sewaktu acara di mulai atau mengunjungi kesekretariatan himatifta untag
+
+-----------------------------------------------
+
+Pelatihan Dasar Web Programing Untuk Lulusan SMA/SMK Bersama PHP Indonesia
+Saturday, June 29, 2013 at 09:00 - 16:00
+Menara ESQ 165, Jl TB Simatupang Kav 1, Cilandak
+
+GRATIS!!!!
+Dalam rangka mengisi liburan menjelang kuliah Bagi lulusan SMK>SMA, PHP Indonesia bersama ESQ School Of Busnines mengadakan acara pelatihan satu hari Web Programing 
+
+Waktu : Sabtu tanggal 29 Juni 2013, Pukul 9.00 pagi s/d 16.00
+Lokasi : EBS Labkom Lantai 19 Menara 165, Jl TB Simatupang Kav 1, Cilandak Jakarta Selatan
+
+Pendaftaran Hubungi 
+Widya di no telp : 021 - 71251191
+
+-----------------------------------------------
+
+Seminar (Mozilla Firefox+PHP Indonesia) : Browser Testing in Web Development - STIKOM, Surabaya
+Saturday, June 8, 2013 at 10:00 - 14:00
+STIKOM SURABAYA
+
+Browser Testing in Web Development
+
+Speaker :
+Mozilla Indonesia - Yoe One Ariestya Niovitta
+PHP Indonesia - Taufan Aditya
+
+Ruang Auditoriom Lantai I, STIKOM
+
+Untuk pendaftaran online telah kami tutup karena sudah memenuhi kuota peserta..Terima kasih
+
+-----------------------------------------------
+
+5th Meetup PHP Indonesia Yogyakarta
+Thursday, June 6, 2013 at 09:00
+Universitas Ahmad Dahlan, Kampus 3
+
+SPEAKER :
+1. Hiraq Citra M.
+2. Rifqi Alfian
+
+TEMPAT :
+Auditorium Kampus 3 Universitas Ahmad Dahlan (UAD)
+Jl. Prof. Dr. Soepomo Umbulharjo
+Yogyakarta
+
+WAKTU :
+Kamis, 6 Juni 2013
+Pukul: 09.00 - Selesai
+
+REGISTRASI PESERTA mulai dari jam 08.00
+
+HTM:
+Umum Rp 20.000
+Mahasiswa Rp 15.000
+
+FASILITAS : 
+Lunch, Gift Card, Ilmu, Temen Baru, Stiker PHP Indonesia
+
+CARA PENDAFTARAN : 
+1. via SMS ke 089 671 623 616 untuk konfirmasi kedatangan dengan format :
+PHPIJOGJA-NAMA-STATUS
+ex: 
+PHPIJOGJA-ARIS S.-MAHASISWA
+
+2. Datang langsung di stand pendaftaran di Grand hall Kampus 3 Universitas Ahmad Dahlan
+
+3. daftar via online : dev.phpindonesia.net
+
+
+CARA PEMBAYARAN :
+1. Via Transfer
+BCA-8465039821 a.n Aris Sudaryanto
+setelah transfer harap konfirmasi via SMS ke 089 671 623 61 dengan format :
+TRF-NAMA-STATUS
+ex: 
+TRF-ARIS S.-MAHASISWA
+
+2. Bayar langsung ditempat..
+
+
+CONTACT PERSON :
+Aris - 089 671 623 616
+
+
+-----------------------------------------------
+
+4th Meetup PHP Indonesia Surabaya++
+Saturday, May 18, 2013 at 12:30 - 17:00
+Untag
+
+HTML5+PHP : Beyond Ordinary Web Application
+
+Panelis:
+Mochamad Gufron Efendi
+Taufan Aditya
+Glend Maatita
+
+Tempat:
+Untag 
+JL. Semolowaru 45
+Surabaya, Jawa Timur
+Graha Wiyata Lantai 9
+
+Sabtu, 18 Mei 2013
+Pukul: 12.30 - 17.00
+
+HTM:
+Umum Rp 15.000
+Mahasiswa Rp 10.000
+
+Contact Person
+Aprilia: 0857 2534 4024
+
+Berikut cara pendaftaran :
+
+1. SMS ke 0857 2534 4024 untuk konfirmasi kedatangan
+
+2. bayar di tempat ketika acara akan di mulai
+
+atau
+
+1. RSVP via http://dev.phpindonesia.net/ (lihat sidebar kanan). Kalau belum daftar di PHP Indonesia, perlu daftar dulu. Dan karena fitur event ini menggunakan API eksternal dari Wakuwakuw (via oAuth), maka diperlukan autorisasi juga. Kalau proses ini berhasil, nama anda akan masuk daftar RSVP.
+
+2. Pembayaran bisa dilakukan on-site di HIMA TI UNTAG. Atau bisa juga via rekening :
+No : 
+0097-01-049664-50-3 (BRI)
+525-01-39448-11-5 (CIMB NIAGA)
+a/n : Aprilia Ramadhayanti
+Jika sudah melakukan pembayaran, cukup sms ke nomor kontak person diatas dengan format : 
+PHPMEETUP KONFIRMASI <NAMA>
+Kalau semua proses udah terverifikasi, maka nama akan muncul di bagian "Terdaftar" di portal PHP Indonesia.
+
+-----------------------------------------------
+
+Padang - 3rd Meet Up PHP Indonesia Padang Sumatera Barat
+Sunday, April 7, 2013 at 15:00
+New Damar Shaker
+Jl. Perintis Kemerdekaan, Jati, Padang
+
+Dalam rangka silaturahmi anggota PHP Indonesia Regional Sumatera Barat, dan kita melanjutkan pembahasan pada pertemua sebelumnya serta sekalian membahas tentang rencana diadakannya Dev Camp oleh PHP Indonesia.
+lokasi : damar shaker Jati, depan FK
+
+-----------------------------------------------
+
+SURABAYA - 3rd Meet Up and Workshop PHP Indonesia - Surabaya - Jawa Timur
+Saturday, April 6, 2013 at 13:00
+Jagoan Hosting Indonesia, Jalan Jemur Andayani 50 Ruko Surya Inti Permata Blok C17-19
+
+Bagi kawan-kawan PHP Indonesia yang berdomisili di surabaya dan sekitarnya, dapat mengikuti acara Meet Up dan Workhsop PHP Indonesia pada 
+
+Hari sabtu tanggal 6 April 2013 pukul 13.00
+Lokasi : Kantor Jagoan Hosting, Jalan Jemur Andayani 50 Ruko Surya Inti permata Blok C17-19. Kantor Jagoan Hosting
+
+Pendaftaran kirim ke 085725344024 dgn format : SBY[spasi]nama[spasi]php_indonesia.
+
+TIDAK DI PUNGUT BIAYA/GRATIS
+
+Fasilitas :
+- Snack + Minum
+- Ilmu
+- Temen
+- Pembicara yang keren abis
+- Tema yang keren puooolll
+
+Contact Person :
+Aprillia Ramadhayanti - https://www.facebook.com/aponxsonconx
+Glend Maatita - https://www.facebook.com/glend.maatita
+Taufan Aditya - https://www.facebook.com/frei.denken
+Mochamad Guffron Efendi - https://www.facebook.com/mgufrone
+
+-----------------------------------------------
+
+Pangkalan Bun - 3rd Meet Up PHP Indonesia Pangkalan Bun - Kota Waringin Barat - Kalimantan Tengah
+Sunday, March 24, 2013 at 13:00 - 16:00
+Kantor Perpustakaan, Arsip Dokumentasi Kab.Kotawaringin Barat
+Jalan Sutan Syahrir Nomor 15 Pangkalan Bun, Pangkalanbun, Kalimantan Tengah
+
+Temu Komunitas PHP Indonesia wilayah Kalimantan Tengah ke 3
+
+Waktu : Hari Minggu Tanggal 24 Maret 2013, Pukul 13.00 WIB s/d pukul 16.00 WIB
+
+Acara : Meet Up dan Workshop.
+Agenda :
+
+1. Penguatan Organisasi dan Strategi
+2. Workshop : Lanjutan Pengenalan HTML, PHP dan MySQL
+3. Kumpul-kumpul bareng
+Catatan :
+
+# Tiket gratis
+# Bawa Laptop + Modem + Charger (juga colokan listrik kabel panjang)
+# Snack + Softdrink (yg ini jangan lupa...)
+
+Contact Person :
+Unggul Cahya Saputra - https://www.facebook.com/indosaputra
+Sulistio Nugroho - https://www.facebook.com/cryptex.snugroho
+
+-----------------------------------------------
+
+Pangkalan Bun - 2nd Meet Up PHP Indonesia, Pangkalan Bun Kotawaringin Barat, Kalimantan Tengah
+Saturday, March 16, 2013 at 11:00 - 14:00
+Kantor Perpustakaan, Arsip Dokumentasi Kab.Kotawaringin Barat
+Jalan Sutan Syahrir Nomor 15 Pangkalan Bun, Pangkalanbun, Kalimantan Tengah
+
+Meet Up dan Workshop PHP Indonesia Kalimantan Tengah,
+Pada pertemuan ini dibahas pembentukan pengurus sesuai draf dari PHP Indonesia, dan workshop Dasar PHP.
+
+Materi Workshop :
+> Dasar Pemrograman Web dg PHP
+> Tool kit
+> Dasar HTML5
+> Dasar PHP 5.4
+> Dasar MySQL 5.5
+
+Bawa : Laptop, air mineral + snack masing-masing
+
+Contact Person : 
+
+Unggul Cahya Saputra - https://www.facebook.com/indosaputra
+Sulistio Nugroho - https://www.facebook.com/cryptex.snugroho
+
+Dashboard PHP Indonesia Kalimantan Tengah
+https://www.facebook.com/events/231521053660773/
+
+-----------------------------------------------
+
+Yogyakarta - PHP Indonesia Meet Up Yogyakarta
+Monday, March 11, 2013 at 18:00
+Nusantara Cafe
+
+Diharapkan kehadiran kawan-kawan anggota PHP Indonesia di wilaya Yogyakarta dalam acara Meet Up Anggota PHP Indonesia - Yogyakarta Pada
+Hari Senin tanggal 11 Maret 2013 Pukul 19.00 WIB di Nusantara Cafe Nologaten Yogyakarta, untuk informasi lengkap silakan hubungi Host
+Peta Lokasi http://maps.google.com/maps?q=-7.774778%2C110.400984
+
+Agenda acara kumpul2 membahs PHP Indonesia Wilayah Jogja kedepan. Jika ada yang ingin ditanyakan silahkan inbox kami...
+
+Thanks
+
+-----------------------------------------------
+
+Medan - Meet Up PHP Indonesia Medan Sumatera Utara
+Sunday, March 3, 2013 at 16:00
+Jl. Dr. Mansyur
+
+Di harapkan kehadiran kawan-kawan PHP Indonesia di wilayah Medan Sumatera Utara Untuk hadir dalam pertemuan yang akan dilaksanakan : di Ule Kareng Jl.Dr Mansyur (dekat pintu 4 USU)
+Tanggal : 03-03-2013
+Jam 4.00 Sore
+
+Contact Person 
+Eko Surya - https://www.facebook.com/eko.item
+Ramadhani Pratama - https://www.facebook.com/ramadhani.pratama.perangin.angin
+
+-----------------------------------------------
+
+Padang - 2nd Meet Up PHP Indonesia Padang Sumatera Barat
+Sunday, March 3, 2013 at 15:00
+New Damar Shaker
+Jl. Perintis Kemerdekaan, Jati, Padang
+
+Dalam rangka tindak lanjut acara pertemuan pertama di damarshaker kemarin, maka kita akan mengadakan pertemuan kedua yg bersifat internal tentang pengurusan PHP Sumatera Barat
+lokasi : damar shaker Jati, depan FK
+
+Contact Person : Geovanne Farel - https://www.facebook.com/geovanne.farell
+
+-----------------------------------------------
+
+SURABAYA - 2nd Meet Up PHP Indonesia - Surabaya - Jawa Timur
+Sunday, March 3, 2013 at 14:00
+depan kampus UNITOMO, jalan semolowaru
+Surabaya - Jawa Timur
+
+Dalam rangka tindak lanjut acara pertemuan pertama, maka PHP Indonesia wilayah Surabaya Jaw Timur, akan mengadakan pertemuan kedua 
+
+lokasi : akan di update
+
+Contact Person : 
+Taufan Aditya - https://www.facebook.com/frei.denken
+Glend Maatita - https://www.facebook.com/glend.maatita
+April Ramadani - https://www.facebook.com/aponxsonconx
+
+UPDATE 
+harap sms dgn format PHP(spasi)nama ke No 085730411130
+saya harap kerja samanya biar nanti tau siapa2 yg pasti datang.
+
+Lokasi, waktu: depan kampus UNITOMO, jalan semolowaru, jam 2 siang hari minggu tanggal 3 Maret 2013
+
+-----------------------------------------------
+
+SURABAYA JAWA TIMUR - TEMU KENAL MEMBERS PHP INDONESIA
+Saturday, February 2, 2013 at 11:00 - 14:00
+Matchbox too (Coffee and friends) - Jl. Jawa, Surabaya
+Jl. Jawa, Surabaya, Indonesia 60281
+
+Bagi kawan-kawan coder PHP Indonesia di Surabaya dan sekitarnya di tunggu kehadirannya pada 
+Tanggal 2 Feb 2013, 
+Lokasi Matchbox Too, Jl. Jawa 33, Surabaya Jawa Timur 
+
+Tema utama : Membahas ide-ide seputar PHP Indonesia 
+Tema sampingan : OOT seputar pemrograman
+
+Informasi silakan hubungi :
+Om Humam Mukti - 085755191753 - https://www.facebook.com/somploc
+
+Tante Aponx - 085725344024 - https://www.facebook.com/aponxsonconx 
+
+Om Taufan Aditya - https://www.facebook.com/frei.denken
+
+Om Glend Maatita - https://www.facebook.com/glend.maatita
+
+-----------------------------------------------
+
+Temu Kenal Anggota PHP Indonesia Padang Sumatera Barat
+Sunday, January 27, 2013 at 16:00
+New Damar Shaker
+Jl. Perintis Kemerdekaan, Jati, Padang
+
+Diberitahukan kepada rekan-rekan yang berdomisili di sumatera barat, khususnya kota padang, PHP Indonesia akan mengadakan temu ramah programmer PHP kota padang dan sekitarnya, acara di adakan pada 
+
+hari : minggu 
+tanggal : 27 Januari 2013 Pukul 16.00 sore
+Lokasi : Kafe Damar Shaker di jati,di depan Fakultas Kedokteran UNAND Padang.
+
+mohon Konfirmasi kehadiran rekan-rekan 
+Geovanne Farell - 083181677730 - 
+https://www.facebook.com/geovanne.farell
+
+di harapkan kehadiran rekan-rekan 
+
+:)
+
+salam hangat programmer PHP Indonesia
+
+-----------------------------------------------
+
+Temu Kenal PHP Indonesia Pekanbaru Riau
+Saturday, January 19, 2013 at 14:00
+Pustaka Wilayah Soeman HS
+jl.sudirman, Pekanbaru 28000
+
+To : All PHP Indonesia di Riau, Pekanbaru dan sekitarnya.
+kami member PHP Indonesia yang domisili di pekanbaru akan mengadakan gathering pertama
+
+Rencana Jadwal :
+Tanggal 19 Januari 2013, jam 14.00 WIB sampai selesai
+Tempat: Pustaka Wilayah Soeman HS.
+
+Mohon teman2 yang domisili di pekanbaru sekitarnya ikut partisipasi ^_^
+
+Contact Person 
+Muhammad Saleh Hafizh Fajri - http://www.facebook.com/fhiz.fajri
+Ruli Armando - http://www.facebook.com/ruliarmando
+
+Regards
+
+-----------------------------------------------

@@ -1,0 +1,541 @@
+2 Event Untuk Anggota PHP Indonesia Makasar - Sulawesi Selatan
+Sunday, December 2, 2012 at 08:00 - 18:00
+Jl. Pengayoman Kompleks Mawar Blok D-16 Panakkukang Mas - Makassar. Telp. 0411-436253
+
+Event 1
+Jadwal kelompok belajar, insyaAllah akan diadakan:
+
+Di gedung iptek UNHAS, hari minggu tgl 2 Desember 2012.
+Jam 09:00 sampai selesai...
+Materi: validasi form dan semua tentang form. (Lanjutan pertemuan sebelumnya)
+
+Event 2
+Diskusi dan penyampaian materi tentang aplikasi php modular dan desain database for long time life.
+
+Host :
+Nanang Rustiyanto - http://www.facebook.com/nanang.rustianto
+Arie The Killers - http://www.facebook.com/arielthekillers
+Herman Syam - http://www.facebook.com/herman.syam
+Wahidin Katsumoto - http://www.facebook.com/wahidin.hikaru
+
+-----------------------------------------------
+
+The Target (Forum IT muda Indonesia)
+Tuesday, October 30, 2012
+Internetan
+Jakarta, Indonesia
+
+http://forum.situstarget.com/thread-310-post-2108.html#pid2108
+
+TheTarget butuh anak2 muda pecinta komputer yang ingin membangun IT Indonesia agar lebih baik.
+
+
+Ayo Gabung Bersama Kami Di The Target ,, niat kami Menjadikan anak muda INDONESIA berprestasi dalam bidang IT dalam kegiatan Positiv
+
+-----------------------------------------------
+
+Pertemuan Coder PHP Indonesia di Wilayah Kediri
+Sunday, October 28, 2012 at 16:00
+kafe pintar Kediri
+
+Diharapkan kehadiran rekan2 php kediri untuk pembentukan kepengurusan PHP Indonesia Wilayah Kediri - Jawa Timur
+Info selengkapnya silakan hubungi om Teguh Andriyanto - http://www.facebook.com/teguh.andriyanto
+
+-----------------------------------------------
+
+(FREE EVENT) MEET UP WITH ARTHUR PURNAMA - IT Consultant Cirquent GmbH | NTT Data Group
+Thursday, October 18, 2012 at 18:30
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Jakarta, Indonesia 12420
+
+Untuk kawan-kawan anggota PHP Indonesia Group yang berada di Jakarta, diharapkan kehadirannya di Basecamp PHP Indonesia, di
+
+Kompleks Ruko Golden Plaza(D'Best) Blok D-18
+Jl. RS Fatmawati No.15
+LOTTE Mart Fatmawati
+Jakarta 12420, INDONESIA
+Phone : +62-21-7506846
+
+Pada tanggal 18 Oktober 2012 After Office Hour (sekitar pukul 18.30 WIB).
+
+Saat ini Om Arthur Purnama - http://www.facebook.com/arthur.purnama - yang bermukim dan berkarir di Jerman (IT Consultant Cirquent GmbH | NTT Data Group) beserta Om Ivan Lanin - http://www.facebook.com/ivanlanin -(CTO APB Group dan dulu berkarir di Wikimedia), ingin berbagi tips dan trik untuk mencapai sukses di dunia programer, diharapkan kiat-kiat meraih sukses mereka berdua bisa menjadi inspirasi dan motivasi bagi kita semua.
+
+Susunan Acara :
+18:30 Pembukaan & Perkenalan
+19:00 Sharing Project Story
+19:30 Application Design
+20:00 Penutupan
+
+
+Bagi yang berminat hadir, silakan isi form pendaftarannya di
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=29
+
+Acara ini tidak dipungut bayaran. Peserta hanya diharapkan hadir tepat waktu, agar acara bisa berjalan sebagaimana mesetinya.
+
+Terima Kasih
+
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Temu Coder PHP Malang Jawa Timur
+Sunday, October 14, 2012 at 09:30
+Taman rekreasi sengkaling
+malang, Malang 65151
+
+Bagi Teman-teman Codder PHP Malang Dan Sekitarnya.....
+Yang mau ikut acara temu coder sambil refeshing di tunggu kehadirannya pada Hari Minggu Tanggal 14 Oktober 2012 Jam 9.30 WIB (minggu pagi) di Taman Rekreasi Sengkaling (Kl Blm tau liat google maps grin ) Kita berkumpul di Loket Saja Biar Enak Nyarinya
+Urunan: Bawa uang secukupnya
+Informasi bisa hubungi Host
+Om Wilda Satya Perdana - http://www.facebook.com/WildaBS3
+Om Vinsensius Angelo - http://www.facebook.com/vafrcor
+Om Deory Pandu - http://www.facebook.com/deoryz
+
+Trims...
+
+-----------------------------------------------
+
+Mohon kesediaan rekan-rekan di wilayah Jawa Barat untuk menghadiri kegiatan ini.
+Sunday, September 16, 2012 at 10:00
+Kopi Progo
+Jl. Progo 22, Bandung 40115
+
+KOORDINASI PROGRAM KERJA PHP INDONESIA WILAYAH JAWA BARAT
+
+Kepada rekan2 Warga PHP Indonesia wilayah Jawa Barat yang mau ikut hadir dan bergabung dalam acara Koordinasi Program Kerja PHP Indonesia Wilayah Jawa Barat yang akan dilaksanakan pada :
+
+Tanggal : Minggu 16 September 2012
+Waktu : 10.00
+Tempat : KOPI PROGO (Jl Progo Dekat Jonas Photo)
+
+Terkait dengan koordinasi sebelumnya, dan belum ada nya program kerja, serta job description dari masing-masing bagian, dengan ini saya mengusulkan agar mengadakan koordinasi mengenai :
+- Pemilihan anggota pada masing-masing bagian
+- Pembagian Kerja masing-masing bagian
+- Program Kerja PHP Jabar Periode 2012 - 2013
+- Perancangan prosedur kerja.
+
+Kami nantikan kehadiran anda.
+
+salam
+
+-----------------------------------------------
+
+Ngopi Bareng NYPD (Ngayogjokarto PHP Developer)
+Saturday, September 15, 2012 at 19:00
+Sego Goeboek belakang kampus Stimik Akakom
+
+Teman-teman PHP jogja dan sekitarnya yang mau gabung, monggo ikutan ngopi di Semesta Cafe Kota baru. pada hari sabtu tgl 15, jam 19:00 . Kumpul bareng teman-teman coder PHP jogjakarta. Pesan Kopi ngobrol ini dan itu. Mengali Ide-ide kreatif s/d nakal. kenalan dengan teman-teman seperjuangan. Membangun ikatan magis dan silaturahim ( jin are welcome )
+
+-----------------------------------------------
+
+Ngopi bareng NYPD, NgaYogjokarto PHP Developer
+Saturday, September 15, 2012 at 19:00
+Semesta Cafe
+Bantul
+
+Kumpul bareng teman-teman coder PHP jogjakarta. Pesan Kopi ngobrol ini dan itu. Mengali Ide-ide kreatif s/d nakal. kenalan dengan teman-teman seperjuangan. Membangun ikatan magis dan silaturahim ( jin are welcome )
+
+-----------------------------------------------
+
+Buka Puasa Bersama PHP Indonesia Jakarta
+Sunday, August 12, 2012 at 16:30
+Rumah Makan lesehan Ampera, Jl.Matraman Raya.
+
+Buka Puasa Bersama bagi anggota komunitas PHP Indonesia yang berada di wilayah Jakarta dan sekitarnya.
+Diharapkan bagi anggota PHP Indonesia yang berniat untuk ikut dalam acara ini agar konfirmasi kepastiannya melalui PM ke La Jayuhni Yarsyah atau Eksa Aja.
+
+Biaya : Rp. 35.000,-
+
+Biaya dapat dibayarkan langsung di tempat, namun konfirmasi dulu tentang kepastian untuk hadirnya paling lambat Jumat 10 agustus 2012. Bagi yang ingin transfer bisa ke BCA no rek: 6460224291 atas nama "Rizka Hermawati".
+
+Kami sangat mengharapkan teman-teman anggota PHP Indonesia khususnya yang tinggal di daerah Jakarta dan sekitarnya untuk hadir dalam acara ini . Terimakasih atas perhatiannya :)
+
+-----------------------------------------------
+
+Buka Puasa Bersama PHP Indonesia - Yogyakarta
+Sunday, August 5, 2012 at 16:00
+Sego macan&kopi klothok,TIMOHO
+Yogyakarta
+
+<?php
+Assalamu'alaikum wr.wb.
+
+Diberitahukan kepada semua pengguna PHP baik yg MURNI, FRAMEWORK , CMS dan Lain2, bahwa hari Minggu tanggal 05 Agustus 2012, PHP Indonesia - Yogyakarta akan mengadakan acara Buka Puasa yang akan diadakan di Sego Macan http://www.yogyes.com/id/places/726/
+Maka dari itu, kami mengundang kepada seluruh Pengguna PHP diseluruh dunia untuk mengikuti acara tersebut.
+Untuk melakukan pendaftaran silahkan menuju ke Link berikut :
+https://docs.google.com/spreadsheet/viewform?formkey=dFFfUHNuS1ExVEs4ZWlMYk5tOHBhemc6MQ
+Diharapkan melakukan pembyaran sebesar 15 ribu ditempat saja, menu yg didapatkan Rencananya Sego macan, Ayam Bakar dan Es Teh.
+untuk informasi lebih lanjut silahkan hubungi :
+Irham = 085 725 249 265
+Demikian undangan ini kami buat, diharapkan kepada teman-teman muslim ataupun non-muslim untuk mengikuti acara ini.
+
+Wassalamu'alaikum. wr.wb
+?>
+
+-----------------------------------------------
+
+Membuat Aplikasi PHP berbasis Web dengan Framework YII
+Saturday, July 28, 2012 at 13:00 - 18:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Jakarta, Indonesia 12420
+
+Atas pemintaan beberapa member, PHP Indonesia kembali melaksanakan Workshop YII PHP Frameworks. Workshops ini bukan lanjutan dari sebelumnya, tapi mengulang dari materi sebelumnya. Di workshop ini akan menerangkan step by step membuat Aplikasi berbasis web lengkap denagn security dengan menggunakan tools2 yang disediakan Framework YII. Berikut detail tentang workshop.
+
+Tanggal : 28 Juli 2012
+Jam : 13.00-18.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Peter Jack Kambey
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=28
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan makanan untuk berbuka puasa, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Hands-On Panada PHP Framework
+Sunday, July 8, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Jakarta, Indonesia 12420
+
+Panada PHP Framework adalah salah satu Framework karya putra Indonesia, oleh sebab itu kami PHP Indonesia berinisiasi untuk mengadakan Workshop hands-On Panada PHP Framework.
+
+Tanggal :8 Juli 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Iskandar Soesman(Kan Dar)
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=27
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Search Engine Optimization(SEO)
+Saturday, July 7, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Jakarta, Indonesia 12420
+
+Setelah sebelumnya sempat ada pembicaraan tentang SEO yang cukup intensif, sehingga menyadarkan kita betapa pentingnya pengaruh SEO dalam memasarkan dan memperkenalkan Web kita. Maka kini PHP Indonesia berinisiasi untuk mengadakan Workshop tentang SEO.
+
+Tanggal :7 Juni 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Tatang Iwan Suryana(Kang Tatang)
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=26
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+iTouchdown 2 (PHP on AS400) (Free Event)
+Saturday, June 23, 2012 at 09:30 - 16:30
+PT IBM Indonesia, The Plaza Office Tower
+
+Please see this Link : http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=25
+
+This event is about AS400 and PHP on AS400. Lastly AS400 also known as iSeries. iSeries is a platform which is many used on many Banks in the world and Indonesia Also. Below is about that Event.
+
+Date : Saturday, 23 June 2012
+Time : 09.30 - 16.30
+Venue : IBM Indonesia Office
+The Plaza Office Tower, 16th Floor, Borobudur Room
+Jl. MH. Thamrin Kav 28-30
+Jakarta 10350
+
+Agenda:
+09.30 - 10.00 : Registration
+10.00 - 10.45 : IBM i Update for Developer + iCommunity Information by Dedi Widharwanto, Systems Architect TSS STG, IBM Indonesia
+10.45 - 11.15 : IBM Partnership with IBM BP by Gunawan Susanto, Business Partner Organization Country Manager, IBM Indonesia
+11.15 - 11.45 : Introduction to The 400 Education Centre by Iim Rusyamsi, CEO of The 400 Education Centre
+11.45 - 13.00 : Lunch
+13.00 - 13.30 : Meet the Master by PHP Indonesia
+13.30 - 14.30 : Customer Testimony
+14.30 - 15.30 : Zend PHP on AS400 by Rama Yurindra, Rynet Group, Zend Authorized Solution Partner South East Asia
+15.30 - 16.00 : Q&A Session
+16.00 - 16.30 : Networking and Entertainment
+
+Door Prize
+Training Voucher Rp. 4.000.000,- at The 400 Education Centre
+
+For RSVP, email to:
+- Meita (rsvp-id@avnet.com)
+- Suryaningrum (suryaningrum@computradetech.com)
+
+http://a1.sphotos.ak.fbcdn.net/hphotos-ak-ash4/s720x720/481393_3641283384011_1880860629_n.jpg
+
+-----------------------------------------------
+
+Membuat Aplikasi berbasis Web dengan Framework CakePHP
+Sunday, June 10, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Setelah sebelumnya ada pembicaraan sedikit tentang CakePHP di PHP Indonesia Facebook Group. Kini kami ingin mengadakan Workshops tentang CakePHP. Di workshop ini akan menerangkan step by step membuat Aplikasi berbasis web lengkap denagn security dengan menggunakan tools2 yang disediakan Framework CakePHP. Berikut detail tentang workshop.
+
+Tanggal : 10 Juni 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Ibnu Hairil
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=24
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Membuat Aplikasi PHP berbasis Web dengan Framework YII
+Saturday, June 9, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Atas pemintaan beberapa member, PHP Indonesia kembali melaksanakan Workshop YII PHP Frameworks. Workshops ini bukan lanjutan dari sebelumnya, tapi mengulang dari materi sebelumnya. Di workshop ini akan menerangkan step by step membuat Aplikasi berbasis web lengkap denagn security dengan menggunakan tools2 yang disediakan Framework YII. Berikut detail tentang workshop.
+
+Tanggal : 9 Juni 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Peter Jack Kambey
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=23
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Hands-On PHP with JQuery
+Sunday, May 27, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Membuat tampilan yang User Friendly dan enak dilihat sangat dibutuhkan saat ini. Beragam browser menjadi tantangan para Developer untuk bisa kompatibilitas antara Aplikasi yang telah dibuat dengan Browser yang akan user pakai. Untuk menjembatani hal ini banyak Framework Javascript menyediakan fitur canggih dan mampu mengatasi permasalahn Cross browser tersebut. Salah satu Framework Javascript tersebut adalah JQuery. Oleh sebab itu kami megadakan Workshop Hands-On PHP with JQuery ini. Workshop tersebut akan diadakan,
+
+Tanggal : 27 Mei 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Krisno W Utomo
+
+Materi:
+- Wrapping jquery
+- selector
+- animasi basic dengan jquery
+- ajax CRUD
+- Easy Application Development With jQuery EasyUI (jika waktu memungkinkan)
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=22
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Membuat Aplikasi Berbasis Web Yang Aman
+Saturday, May 26, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Tingkat keamanan suatu Web Aplikasi sangat penting. Mengingat begitu pentingnya hal tersebut, maka kami merasa perlu untuk yang mengadakan workshop ini. DI workshop ini akan menerangkan step by step membuat Aplikasi berbasis Web yang aman, dari mulai pembuatan form sampai kemanajemen Session di PHP.
+
+Tanggal : 26 Mei 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : La Jayuhni Yarsyah
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=21
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikutu online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+-----------------------------------------------
+
+Membuat Aplikasi dengan Framework YII
+Saturday, May 12, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Melanjutkan pembahasan tentang YII Framework, kini membahas tentang cara membuat simple Aplikasi dengan Framework YII. Di workshop ini akan menerangkan step by step membuat Aplikasi lengkap denagn security dengan menggunakan tools2 yang disediakan Framework YII. Berikut detail tentang workshop.
+
+Tanggal : 12 Mei 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Peter Jack Kambey
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=20
+
+Bagi pendaftar yang onsite wajib membayar Rp. 100.000, sedangkan yang ingin mengikuti online via webex tidak dipungut biaya. Peserta yang onsite akan mendapatkan Cemilan Coffe Break, Makan siang, Sertifikat Training, dan DVD Rekaman training.
+
+Cara pembayaran bisa dibayar langsung atau transfer ke rekening BCA saya sehari sebelum Acara Workshop. Bagi yang ingin transfer pembayaran untuk konsumsi di workshop bisa transfer langsung ke rekening BCA.
+Norek : 2181617120
+a/n : AWALUDIN RAHMADI
+
+Bagi pendaftar yang sudah bayar harap segera mengkonfirmasi pembayarannya dengan mengirimkan konfimasi pembayaran ke, awal@rynet.com.sg.
+
+Adapun fasilitas yang disediakan hanya tempat dan dan koneksi internet. Sedangkan laptop bawa masing2..
+
+
+Terima Kasih
+
+
+
+PHP Indonesia
+
+
+NB : Mengingat waktu yg tinggal besok, maka pembayaran bisa dilakukan besok sebelum acara dimulai.
+
+-----------------------------------------------
+
+PHP with Oracle Database
+Saturday, May 5, 2012 at 10:00 - 16:00
+D'Best Fatmawati
+Jl. RS. Fatmawati 15, Daerah Khusus Ibukota Jakarta 12420
+
+Setelah sebelumnya sempat ada pembicaraan tentang PHP dengan Database Oracle. PHP Indonesia Group akan mengadakan Workshop PHP With Oracle Database. Workshop ini menerangkan tentang bagaimana membuat Aplikasi berbasis PHP dengan Database Oracle.
+
+Tanggal : 5 Mei 2012
+Jam : 10.00-16.00
+Tempat : Basecamp PHP Indonesia, Kompleks Ruko Dbest Fatmawati Blok D18
+Pemateri : Nur Hidayat
+
+Peserta onsite hanya untuk 10 orang peserta, untuk yang online bisa via video streaming untuk 25 saluran dan video record untuk di jadikan video tutorial.
+
+Bagi Yang berminat silahkan melakukan Pendaftaran di sini :
+
+http://www.enterprisephpcenter.com/jobs/webinars-schedule/?ee=19... Lihat Selengkapnya
+
+-----------------------------------------------
