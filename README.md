@@ -3,10 +3,10 @@ Website Resmi PHP Indonesia Community
 
 ### Cara pemasangan pada localhost untuk proses development :
 
-1. Buat database baru (mysql)
-2. Import database dengan file phpindonesia.sql
+1. Buat database baru (postgresql)
+2. Import database dengan file phpindonesia-postgre.sql
 3. Konfigurasi pada server local untuk mengaktifkan mod_rewrite
-4. Edit file konfigurasi pada po-library/po-config.php
+4. Edit file konfigurasi pada po-library/po-config.php (silahkan disesuaikan)
 
 	```php
 	$db['host']		= "localhost";
