@@ -84,6 +84,7 @@
         var percentage = $(this).attr("data-percent");
         var canvas = $(this).children("canvas").get(0);
         var percenttext = $(this).find("span");
+		var percenttextcstm = $(this).attr("data-text");
         var dcs = this.donutchartsettings;
 
         if (canvas.getContext)
@@ -97,7 +98,11 @@
 
             methods.drawBg.call(ctx,dcs);
             methods.drawFg.apply(ctx,[dcs,j]);
-            percenttext.text(j+"%");
+			if (percenttextcstm == '' || percenttextcstm == null) {
+				percenttext.text(j+"%");
+			} else {
+				percenttext.addClass(percenttextcstm);
+			}
 
             if (j >= percentage)
               clearInterval(animationID);

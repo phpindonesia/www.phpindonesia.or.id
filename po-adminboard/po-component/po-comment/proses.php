@@ -97,9 +97,9 @@ elseif ($mod=='comment' AND $act=='setting1'){
 		$dbusersql = DATABASE_USER;
 		$dbpasswordsql = DATABASE_PASS;
 		$dbnamesql = DATABASE_NAME;
-		$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-		mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-		mysql_query("ALTER TABLE comment ALTER COLUMN active SET DEFAULT 'Y'");
+		$dbportsql = DATABASE_PORT;
+		$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+		pg_query($connection, "ALTER TABLE comment ALTER COLUMN active SET DEFAULT 'Y'::bpchar");
 		header('location:../../admin.php?mod='.$mod);
 	}else{
 		header('location:../../404.php');
@@ -113,9 +113,9 @@ elseif ($mod=='comment' AND $act=='setting2'){
 		$dbusersql = DATABASE_USER;
 		$dbpasswordsql = DATABASE_PASS;
 		$dbnamesql = DATABASE_NAME;
-		$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-		mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-		mysql_query("ALTER TABLE comment ALTER COLUMN active SET DEFAULT 'N'");
+		$dbportsql = DATABASE_PORT;
+		$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+		pg_query($connection, "ALTER TABLE comment ALTER COLUMN active SET DEFAULT 'N'::bpchar");
 		header('location:../../admin.php?mod='.$mod);
 	}else{
 		header('location:../../404.php');

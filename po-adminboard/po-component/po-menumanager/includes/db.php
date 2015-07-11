@@ -18,21 +18,17 @@ class DB {
 	var $result;
 
 	/**
-	 * Connect to mysql server
+	 * Connect to postgresql server
 	 *
 	 * @param string $host
 	 * @param string $user
 	 * @param string $pass
 	 * @param string $db_name
 	 */
-	function Connect($host, $user, $pass, $db_name) {
-		$this->link = mysql_connect($host, $user, $pass);
+	function Connect($host, $user, $pass, $db_name, $port) {
+		$this->link = pg_connect("host=".$host." port=".$port." dbname=".$db_name." user=".$user." password=".$pass);
 		if (!$this->link) {
-			die('Could not connect: ' . mysql_error());
-		}
-		$db_selected = mysql_select_db($db_name, $this->link);
-		if (!$db_selected) {
-			die ("Can't use $db_name : " . mysql_error());
+			die('Could not connect: ' . pg_last_error($this->link));
 		}
 		return $this->link;
 	}
@@ -43,9 +39,9 @@ class DB {
 	 * @param string $sql
 	 */
 	function Execute($sql) {
-		$this->result = mysql_query($sql, $this->link);
+		$this->result = pg_query($this->link, $sql);
 		if (!$this->result) {
-			die('Invalid query: ' . mysql_error());
+			die('Invalid query: ' . pg_last_error($this->result));
 		}
 		return $this->result;
 	}
@@ -60,7 +56,7 @@ class DB {
 		$this->Execute($sql);
 		$data = array();
 		if ($this->result) {
-			while ($row = mysql_fetch_assoc($this->result)) {
+			while ($row = pg_fetch_assoc($this->result)) {
 				$data[] = $row;
 			}
 		}
@@ -77,7 +73,7 @@ class DB {
 		$this->Execute($sql);
 		$data = '';
 		if ($this->result) {
-			$data = mysql_result($this->result, 0);
+			$data = pg_fetch_result($this->result, 0);
 		}
 		return $data;
 	}
@@ -92,14 +88,14 @@ class DB {
 		$this->Execute($sql);
 		$data = array();
 		if ($this->result) {
-			$data = mysql_fetch_assoc($this->result);
+			$data = pg_fetch_assoc($this->result);
 		}
 		return $data;
 	}
 
 	function NumRow($sql) {
 		$this->Execute($sql);
-		$data = mysql_num_rows($this->result);
+		$data = pg_num_rows($this->result);
 		return $data;
 	}
 
@@ -113,7 +109,7 @@ class DB {
 		$this->Execute($sql);
 		$data = array();
 		if ($this->result) {
-			while ($row = mysql_fetch_row($this->result)) {
+			while ($row = pg_fetch_row($this->result)) {
 				$data[] = $row[0];
 			}
 		}
@@ -130,13 +126,13 @@ class DB {
 		$this->Execute($sql);
 		$data = array();
 		if ($this->result) {
-			$num_fields = mysql_num_fields($this->result);
+			$num_fields = pg_num_fields($this->result);
 			if ($num_fields == 2) {
-				while ($row = mysql_fetch_row($this->result)) {
+				while ($row = pg_fetch_row($this->result)) {
 					$data[$row[0]] = $row[1];
 				}
 			} elseif ($num_fields > 2) {
-				while ($row = mysql_fetch_row($this->result)) {
+				while ($row = pg_fetch_row($this->result)) {
 					$k = $row[0];
 					$v = array_slice($row, 1);
 					$data[$k] = $v;
@@ -160,16 +156,31 @@ class DB {
 			case 'UPDATE': $sql = 'UPDATE '; break;
 		}
 		$sql .= $table_name;
-		$sql .= ' SET ';
-		foreach ($data as $key => $value) {
-			if (is_array($value)) {
-				$value = $value[0];
-			} else {
-				$value = $this->quote_smart($value);
+		if ($action == 'UPDATE') {
+			$sql .= ' SET ';
+			foreach ($data as $key => $value) {
+				if (is_array($value)) {
+					$value = $value[0];
+				} else {
+					$value = $this->quote_smart($value);
+				}
+				$d[] = "$key = $value";
 			}
-			$d[] = "$key = $value";
+			$sql .= implode(', ', $d);
+		} else {
+			$sql .= ' ( ';
+			foreach ($data as $key => $value) {
+				$d[] = $key;
+			}
+			$sql .= implode(', ', $d);
+			$sql .= " ) VALUES ( ";
+			foreach ($data as $key => $value) {
+				$value = "'".pg_escape_string($value)."'";
+				$d2[] = $value;
+			}
+			$sql .= implode(', ', $d2);
+			$sql .= ' )';
 		}
-		$sql .= implode(', ', $d);
 		if ($action == 'UPDATE') {
 			$sql .= " WHERE $where";
 		}
@@ -199,11 +210,14 @@ class DB {
 	}
 
 	/**
-	 * Get MySQL last insert ID
+	 * Get postgresql last insert ID
 	 *
 	 */
 	function Insert_ID() {
-		return mysql_insert_id();
+		$insert_query = pg_query("SELECT lastval();");
+		$insert_row = pg_fetch_row($insert_query);
+		$insert_id = $insert_row[0];
+		return $insert_id;
 	}
 
 	/**
@@ -219,17 +233,17 @@ class DB {
 		}
 		// Quote if not a number or a numeric string
 		if (!is_numeric($value)) {
-			$value = "'" . mysql_real_escape_string($value) . "'";
+			$value = "'" . pg_escape_string($value) . "'";
 		}
 		return $value;
 	}
 
 	/**
-	 * Close mysql connection
+	 * Close postgresql connection
 	 *
 	 */
 	function Close() {
-		@mysql_close($this->link);
+		@pg_close($this->link);
 	}
 }
 

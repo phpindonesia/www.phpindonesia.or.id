@@ -503,7 +503,7 @@ echo '<textarea class="form-control" id="pohelper" style="width:100%; height:600
 	$composts = $tabledcom->findAllLimitByAnd(id_comment, id_post, active, "$idpost", "Y", "ASC", "$posisi,$batas");
 	$totaldcom = $tabledcom->numRowByAnd(id_post, $idpost, active, \'Y\');
 
-	mysql_query("UPDATE post SET hits = $currentDetail->hits+1 WHERE id_post = \'".$idpost."\'");
+	mysql_query($connection, "UPDATE post SET hits = $currentDetail->hits+1 WHERE id_post = \'".$idpost."\'");
 ?>
 ...bersambung ke code di bawah ini...
 </textarea></p>';

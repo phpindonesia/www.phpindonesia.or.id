@@ -22,8 +22,14 @@ if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])) {
 		$total8  = $table8->numRowBy(status, 'N');
 		$table9  = new PoTable('contact');
 		$total9  = $table9->numRowBy(status, 'N');
-		$total10 = mysql_query("SELECT * FROM post,users WHERE users.id_user = post.editor AND users.level = '3' AND post.active = 'N'");
-		$total10 = mysql_num_rows($total10);
+		$dbhostq = DATABASE_HOST;
+		$dbuserq = DATABASE_USER;
+		$dbpasswordq = DATABASE_PASS;
+		$dbnameq = DATABASE_NAME;
+		$dbportq = DATABASE_PORT;
+		$connectionq = pg_connect("host=".$dbhostq." port=".$dbportq." dbname=".$dbnameq." user=".$dbuserq." password=".$dbpasswordq) or die(pg_last_error());
+		$total10 = pg_query($connectionq, "SELECT * FROM post, users WHERE users.id_user::varchar = post.editor AND users.level = '3' AND post.active = 'N'");
+		$total10 = pg_num_rows($total10);
 		include "po-component/po-home/traffic.php";
 		$visitorc = $currentStat3 + $currentStat4 + $currentStat5 + $currentStat6;
 		$hitsc    = $sql_hits3 + $sql_hits4 + $sql_hits5 + $sql_hits6;

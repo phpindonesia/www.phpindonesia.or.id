@@ -12,13 +12,10 @@ class PoConnect {
 			$dbuser = DATABASE_USER;
 			$dbpassword = DATABASE_PASS;
 			$dbname = DATABASE_NAME;
-			self::$_connection = @mysql_connect($dbhost, $dbuser, $dbpassword);
+			$dbport = DATABASE_PORT;
+			self::$_connection = @pg_connect("host=".$dbhost." port=".$dbport." dbname=".$dbname." user=".$dbuser." password=".$dbpassword);
 			if(!self::$_connection){
-				throw new Exception('Gagal melalukan koneksi ke database. '.mysql_error());
-			}
-			$result = @mysql_select_db($dbname, self::$_connection);
-			if(!$result){
-				throw new Exception('Koneksi gagal: '.mysql_error());
+				throw new Exception('Gagal melalukan koneksi ke database. '.pg_last_error(self::$_connection));
 			}
 		}
 		return self::$_connection;
@@ -26,7 +23,7 @@ class PoConnect {
 
 	public static function close(){
 		if(self::$_connection){
-			mysql_close(self::$_connection);
+			pg_close(self::$_connection);
 		}
 	}
 } 

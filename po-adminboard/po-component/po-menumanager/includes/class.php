@@ -10,7 +10,7 @@ class Menu {
 	public function __construct() {
 		include '../../po-component/po-menumanager/includes/db.php';
 		$this->db = new DB;
-		$this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME);
+		$this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME, DATABASE_PORT);
 	}
 
 	protected function view($view_file, $data = '') {
@@ -336,7 +336,7 @@ class Menu_group {
 	public function __construct() {
 		include '../../po-component/po-menumanager/includes/db.php';
 		$this->db = new DB;
-		$this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME);
+		$this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME, DATABASE_PORT);
 	}
 
 	protected function view($view_file, $data = '') {

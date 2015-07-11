@@ -583,28 +583,6 @@ jQuery(document).ready(function($){
 	});
 	
 	if($().validate) {
-	
-		/* //AJAX CONTACT FORM...
-		$('form[name="frmcontact"]').submit(function () {
-			var This = $(this);
-			if($(This).valid()) {
-				var action = $(This).attr('action');
-				var data_value = unescape($(This).serialize());
-				$.ajax({
-					 type: "POST",
-					 url:action,
-					 data: data_value,
-					 error: function (xhr, status, error) {
-						 confirm('The page save failed.');
-					   },
-					  success: function (response) {
-						$('#ajax_contact_msg').html(response);
-						$('#ajax_contact_msg').slideDown('slow');
-					 }
-				});
-			}
-			return false;
-		}); */
 		
 		$('form[name="frmcontact"]').validate({
 			rules: { 
@@ -632,29 +610,6 @@ jQuery(document).ready(function($){
 				pwd: { required: true },
 			},
 			errorPlacement: function(error, element) { }
-		});	
-	
-		//AJAX SUBSCRIBE FORM...
-		$('form[name="frmNewsletter"]').submit(function () {
-			var This = $(this);
-			if($(This).valid()) {
-				var action = $(This).attr('action');
-				var data_value = unescape($(This).serialize());
-				$.ajax({
-					 type: "POST",
-					 url:action,
-					 data: data_value,
-					 error: function (xhr, status, error) {
-						 confirm('The page save failed.');
-					   },
-					  success: function (response) {
-						$('#ajax_newsletter_msg').html(response);
-						$('#ajax_newsletter_msg').slideDown('slow');
-						if (response.match('success') != null) $(This).slideUp('slow');
-					 }
-				});
-			}
-			return false;
 		});
 		
 		$('form[name="frmNewsletter"]').validate({
@@ -665,28 +620,6 @@ jQuery(document).ready(function($){
 		});
 		
 		if($('form[name="frmNewsletterContent"]').length) {
-			$('form[name="frmNewsletterContent"]').submit(function () {
-				var This = $(this);
-				if($(This).valid()) {
-					var action = $(This).attr('action');
-					var data_value = unescape($(This).serialize());
-					$.ajax({
-						 type: "POST",
-						 url:action,
-						 data: data_value,
-						 error: function (xhr, status, error) {
-							 confirm('The page save failed.');
-						   },
-						  success: function (response) {
-							$('#ajax_newsletter_msg_content').html(response);
-							$('#ajax_newsletter_msg_content').slideDown('slow');
-							if (response.match('success') != null) $(This).slideUp('slow');
-						 }
-					});
-				}
-				return false;
-			});
-			
 			$('form[name="frmNewsletterContent"]').validate({
 				rules: { 
 					email: { required: true, email: true }
@@ -895,29 +828,29 @@ jQuery(document).ready(function($){
 	});
 });
 
-	//MeanMenu Custom Scroll...
-	function funtoScroll(x, e) {
-		"use strict";
-		var str = new String(e.target);
-		var pos = str.indexOf('#');
-		var t = str.substr(pos);
-		
-		var eleclass = jQuery(e.target).prop("class");
-		
-		if(eleclass == "external") {
-			window.location.href = e.target;	
-		} else {
-			jQuery.scrollTo(t, 750, { offset: { top: -53 }});
-		}
-		
-		jQuery(x).parent('.mean-bar').next('.mean-push').remove();		
-		jQuery(x).parent('.mean-bar').remove();
+//MeanMenu Custom Scroll...
+function funtoScroll(x, e) {
+	"use strict";
+	var str = new String(e.target);
+	var pos = str.indexOf('#');
+	var t = str.substr(pos);
 	
-		jQuery('nav#main-menu').meanmenu({
-			meanMenuContainer :  jQuery('#menu-container'),
-			meanRevealPosition:  'right',
-			meanScreenWidth   :  767	
-		});
+	var eleclass = jQuery(e.target).prop("class");
 		
-		e.preventDefault();
-	}(jQuery);
+	if(eleclass == "external") {
+		window.location.href = e.target;	
+	} else {
+		jQuery.scrollTo(t, 750, { offset: { top: -53 }});
+	}
+		
+	jQuery(x).parent('.mean-bar').next('.mean-push').remove();		
+	jQuery(x).parent('.mean-bar').remove();
+	
+	jQuery('nav#main-menu').meanmenu({
+		meanMenuContainer :  jQuery('#menu-container'),
+		meanRevealPosition:  'right',
+		meanScreenWidth   :  767	
+	});
+		
+	e.preventDefault();
+}(jQuery);

@@ -53,12 +53,7 @@
 						$tablegal = new PoTable('gallery');
 						$gallerys = $tablegal->findAllLimitBy(id_gallery, id_album, $idalb, DESC, "$posisi,$batas");
 						foreach($gallerys as $gallery){
-							$idalb = $gallery->id_album;
-							$tablecalb = new PoTable('album');
-							$currentCalb = $tablecalb->findBy(id_album, $idalb);
-							$currentCalb = $currentCalb->current();
-							if ($currentCalb->active == 'Y'){
-							?>
+					?>
 						<div class="portfolio dt-sc-one-fourth column with-space">
                             <!-- **portfolio-thumb - Starts** -->
                             <div class="portfolio-thumb">
@@ -75,8 +70,7 @@
                                 </div>
                             </div> <!-- **portfolio-detail - Ends** -->
                         </div>
-							<?php
-							}
+					<?php
 						}
 					?>
 					</div> <!-- **portfolio-container - Ends** -->

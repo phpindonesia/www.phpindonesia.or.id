@@ -16,7 +16,6 @@ if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 	$activemenu = ($action == 'menumanager') ? 'active' : '';
 	$activecomponent = ($action == 'component') ? 'active' : '';
 	$activeuser = ($action == 'user') ? 'active' : '';
-    $activecogen = ($action == 'cogen') ? 'active' : '';
 
 	if ($action == 'post'){
 		$actionact = $_GET['act'];
@@ -51,9 +50,6 @@ if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 		$actionact = $_GET['act'];
 		$thisuser = ($actionact == '' OR $actionact == 'edit') ? 'active' : '';
 		$thisuseraddnew = ($actionact == 'addnew') ? 'active' : '';
-    }elseif ($action == 'cogen'){
-		$actionact = $_GET['act'];
-		$thiscogen = ($actionact == '' OR $actionact == 'compogen') ? 'active' : '';
 	}else{
 		$actionact = $_GET['act'];
 		$thiscomponent = ($actionact == '') ? 'active' : '';
@@ -126,12 +122,11 @@ if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 		<li class='sidebar-header'>
 			<span class='sidebar-header-title'>$langmenu16</span>
 		</li>
-		<li class='$activecomponent $activecogen'>
+		<li class='$activecomponent'>
 			<a href='#' class='sidebar-nav-menu'><i class='fa fa-angle-left sidebar-nav-indicator'></i><i class='fa fa-puzzle-piece sidebar-nav-icon'></i>$langmenu16</a>
 			<ul>
 				<li><a href='admin.php?mod=component' class='$thiscomponent'>$langmenu17</a></li>
 				<li><a href='admin.php?mod=component&act=addnew' class='$thiscomponentaddnew'>$langmenu18</a></li>
-                <li><a href='admin.php?mod=cogen' class='$thiscogen'>CoGen</a></li>
 				<li>
 					<a href='#' class='sidebar-nav-submenu'><i class='fa fa-angle-left sidebar-nav-indicator'></i>$langmenu31</a>
 					<ul>";

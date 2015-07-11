@@ -14,7 +14,7 @@
     <meta name="description" content="<?php include "meta-desc.php"; ?>" />
     <meta name="keywords" content="<?php include "meta-key.php"; ?>" />
     <meta http-equiv="Copyright" content="popojicms" />
-    <meta name="author" content="Dwira Survivor" />
+    <meta name="author" content="PHP Indonesia" />
     <meta http-equiv="imagetoolbar" content="no" />
     <meta name="language" content="Indonesia" />
     <meta name="revisit-after" content="7" />
@@ -61,7 +61,7 @@
         <div class="top-bar">
             <div class="container">
                 <ul class="top-menu">
-                    <li><i class="fa fa-home"></i> Bersama Berkaya Berjaya</li>
+                    <li><i class="fa fa-home"></i> Bersama Berkarya Berjaya</li>
                     <li><i class="fa fa-envelope"></i> info<span>[at]</span>phpindonesia.or.id</li>
                 </ul>
                 <div class="top-right">

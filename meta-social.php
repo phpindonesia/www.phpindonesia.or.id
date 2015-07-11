@@ -51,6 +51,6 @@ if ($mod==""){
 		$metasocial_desc = $meta_description;
 		$metasocial_img = $website_url.'/favicon.png';
     }
-    include "po-adminboardboard/po-component/po-setting/meta-social.txt";
+    include "po-adminboard/po-component/po-setting/meta-social.txt";
 }
 ?>

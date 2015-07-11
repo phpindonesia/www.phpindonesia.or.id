@@ -28,12 +28,12 @@ if ($mod=='component' AND $act=='delete'){
 			$dbusersql = DATABASE_USER;
 			$dbpasswordsql = DATABASE_PASS;
 			$dbnamesql = DATABASE_NAME;
-			$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-			mysql_select_db($dbnamesql, $connection) or die(mysql_error());
+			$dbportsql = DATABASE_PORT;
+			$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
 			$dirPath = "../../po-component/$component";
 			$deletef = deleteDir($dirPath);
-			$queryf = "DROP TABLE IF EXISTS `$dbnamesql`.`$table_name`";
-			$resultf = mysql_query($queryf);
+			$queryf = "DROP TABLE IF EXISTS `$table_name`";
+			$resultf = pg_query($connection, $queryf);
 			$tabledel->deleteBy('id_component', $id);
 			header('location:../../admin.php?mod='.$mod);
 	}else{
@@ -122,10 +122,10 @@ elseif ($mod=='component' AND $act=='importtable'){
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
 				foreach($sql_contents as $query){
-					$result = mysql_query($query);
+					$result = pg_query($connection, $query);
 					if (!$result){
 						unlink("../../../po-content/po-upload/$nama_file_unik");
 						header('location:../../admin.php?mod='.$mod);

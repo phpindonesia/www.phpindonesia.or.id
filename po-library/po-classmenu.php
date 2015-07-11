@@ -12,7 +12,7 @@ class PoController {
     public function __construct() {
         include 'po-adminboard/po-component/po-menumanager/includes/db.php';
         $this->db = new DB;
-        $this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME);
+        $this->db->Connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME, DATABASE_PORT);
         include 'po-adminboard/po-component/po-menumanager/includes/tree.php';
     }
     /**

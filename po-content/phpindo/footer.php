@@ -4,6 +4,28 @@
 ?>
 		<!-- **Footer** -->
         <footer id="footer">
+			<div class="full-width-section grey">	  
+            	<div class="dt-sc-margin30"></div>
+                <div class="container">
+                    <div class="newsletter-container">                                            
+                        <div class="dt-sc-one-half column first">
+                            <div class="newsletter-content">
+                            	<span class="fa fa-envelope"></span>
+                        		<h3>Newsletter Subscription</h3>
+                            </div>
+                        </div>
+                        <div class="dt-sc-one-half column">
+                            <form method="post" class="newsletter-form" name="frmNewsletterContent" action="<?=$website_url;?>/subscribe.php">
+                                <input required="" placeholder="Enter Your Email ID" name="email_address" type="email">
+                                <input value="Submit" class="button" name="submit" type="submit">
+                            </form>
+                            <div id="ajax_newsletter_msg_content"></div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="dt-sc-margin30"></div>
+            </div>
+
         	<div class="footer-widgets-wrapper type2">
                 <div class="container">
                     <div class="column dt-sc-one-fourth first">
@@ -59,7 +81,7 @@
             	<div class="container">
                 	<p>PHP Indonesia Community &copy; 2015. <a href="<?=$website_url;?>/pages/developer">Design By PHP Indonesia Web Team</a></p>
                     <ul class="footer-links">
-                    	<li>Web Hosted By <a href="<?=$website_url;?>/pages/hosted"></a></li>
+                    	<li>Web Hosted By <a href="<?=$website_url;?>/pages/hosted">Muhammad Saleh Hafizh Fajri</a></li>
                     </ul>
                 </div>
             </div>

@@ -112,9 +112,9 @@ elseif ($mod=='post' AND $act=='input'){
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-				mysql_query("UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+				pg_query($connection, "UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
 			}
 			header('location:../../admin.php?mod='.$mod);
 		}else{
@@ -136,9 +136,9 @@ elseif ($mod=='post' AND $act=='input'){
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-				mysql_query("UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+				pg_query($connection, "UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
 			}
 			header('location:../../admin.php?mod='.$mod);
 		}
@@ -193,9 +193,9 @@ elseif ($mod=='post' AND $act=='update'){
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-				mysql_query("UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+				pg_query($connection, "UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
 			}
 			header('location:../../admin.php?mod='.$mod);
 		}else{
@@ -217,9 +217,9 @@ elseif ($mod=='post' AND $act=='update'){
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-				mysql_query("UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
+				pg_query($connection, "UPDATE tag SET count=count+1 WHERE tag_seo='$tag_seo[$i]'");
 			}
 			header('location:../../admin.php?mod='.$mod);
 		}

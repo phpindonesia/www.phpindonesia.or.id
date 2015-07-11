@@ -22,21 +22,23 @@ if($currentRoleAccess->read_access == "Y"){
     $gaSql['password']   = DATABASE_PASS;
     $gaSql['db']         = DATABASE_NAME;
     $gaSql['server']     = DATABASE_HOST;
+	$gaSql['port']     	 = DATABASE_PORT;
 
-    $gaSql['link'] =  mysql_pconnect( $gaSql['server'], $gaSql['user'], $gaSql['password']  ) or
-        die( 'Could not open connection to server' );
-
-    mysql_select_db( $gaSql['db'], $gaSql['link'] ) or
-        die( 'Could not select database '. $gaSql['db'] );
+    $gaSql['link'] = pg_connect(
+        " host=".$gaSql['server'].
+		" port=".$gaSql['port'].
+        " dbname=".$gaSql['db'].
+        " user=".$gaSql['user'].
+        " password=".$gaSql['password']
+    ) or die('Could not connect: ' . pg_last_error());
 
     $sLimit = "";
     if ( isset( $_GET['iDisplayStart'] ) && $_GET['iDisplayLength'] != '-1' )
     {
-        $sLimit = "LIMIT ".intval( $_GET['iDisplayStart'] ).", ".
-            intval( $_GET['iDisplayLength'] );
+        $sLimit = "LIMIT ".intval( $_GET['iDisplayLength'] )." OFFSET ".
+            intval( $_GET['iDisplayStart'] );
     }
 
-    $sOrder = "";
     if ( isset( $_GET['iSortCol_0'] ) )
     {
         $sOrder = "ORDER BY  ";
@@ -44,11 +46,11 @@ if($currentRoleAccess->read_access == "Y"){
         {
             if ( $_GET[ 'bSortable_'.intval($_GET['iSortCol_'.$i]) ] == "true" )
             {
-                $sOrder .= "`".$aColumns[ intval( $_GET['iSortCol_'.$i] ) ]."` ".
-                    ($_GET['sSortDir_'.$i]==='asc' ? 'asc' : 'desc') .", ";
+                $sOrder .= $aColumns[ intval( $_GET['iSortCol_'.$i] ) ]."
+                    ".($_GET['sSortDir_'.$i]==='asc' ? 'asc' : 'desc').", ";
             }
         }
-
+         
         $sOrder = substr_replace( $sOrder, "", -2 );
         if ( $sOrder == "ORDER BY" )
         {
@@ -57,20 +59,28 @@ if($currentRoleAccess->read_access == "Y"){
     }
 
     $sWhere = "";
-    if ( isset($_GET['sSearch']) && $_GET['sSearch'] != "" )
+    if ( $_GET['sSearch'] != "" )
     {
         $sWhere = "WHERE (";
         for ( $i=0 ; $i<count($aColumns) ; $i++ )
         {
-            $sWhere .= $aColumns[$i]." LIKE '%".mysql_real_escape_string( $_GET['sSearch'] )."%' OR ";
+            if ( $_GET['bSearchable_'.$i] == "true" )
+            {
+				if ($aColumns[$i] == 'id_pages') {
+					$wcol = "cast({$aColumns[$i]} as text)";
+				} else {
+					$wcol = $aColumns[$i];
+				}
+                $sWhere .= $wcol." ILIKE '%".pg_escape_string( $_GET['sSearch'] )."%' OR ";
+            }
         }
         $sWhere = substr_replace( $sWhere, "", -3 );
-        $sWhere .= ')';
+        $sWhere .= ")";
     }
 
     for ( $i=0 ; $i<count($aColumns) ; $i++ )
     {
-        if ( isset($_GET['bSearchable_'.$i]) && $_GET['bSearchable_'.$i] == "true" && $_GET['sSearch_'.$i] != '' )
+        if ( $_GET['bSearchable_'.$i] == "true" && $_GET['sSearch_'.$i] != '' )
         {
             if ( $sWhere == "" )
             {
@@ -80,33 +90,47 @@ if($currentRoleAccess->read_access == "Y"){
             {
                 $sWhere .= " AND ";
             }
-            $sWhere .= $aColumns[$i]." LIKE '%".mysql_real_escape_string($_GET['sSearch_'.$i])."%' ";
+			if ($aColumns[$i] == 'id_pages') {
+				$wcol = "cast({$aColumns[$i]} as text)";
+			} else {
+				$wcol = $aColumns[$i];
+			}
+            $sWhere .= $wcol." ILIKE '%".pg_escape_string($_GET['sSearch_'.$i])."%' ";
         }
     }
 
     $sQuery = "
-        SELECT SQL_CALC_FOUND_ROWS ".str_replace(" , ", " ", implode(", ", $aColumns))."
+        SELECT ".str_replace(" , ", " ", implode(", ", $aColumns))."
         FROM   $sTable
         $sWhere
         $sOrder
         $sLimit
     ";
-    $rResult = mysql_query( $sQuery, $gaSql['link'] ) or die(mysql_error());
+	$rResult = pg_query( $gaSql['link'], $sQuery ) or die(pg_last_error());
 
     $sQuery = "
-        SELECT FOUND_ROWS()
-    ";
-    $rResultFilterTotal = mysql_query( $sQuery, $gaSql['link'] ) or die(mysql_error());
-    $aResultFilterTotal = mysql_fetch_array($rResultFilterTotal);
-    $iFilteredTotal = $aResultFilterTotal[0];
-
-    $sQuery = "
-        SELECT COUNT(".$sIndexColumn.")
+        SELECT $sIndexColumn
         FROM   $sTable
     ";
-    $rResultTotal = mysql_query( $sQuery, $gaSql['link'] ) or die(mysql_error());
-    $aResultTotal = mysql_fetch_array($rResultTotal);
-    $iTotal = $aResultTotal[0];
+    $rResultTotal = pg_query( $gaSql['link'], $sQuery ) or die(pg_last_error());
+    $iTotal = pg_num_rows($rResultTotal);
+    pg_free_result( $rResultTotal );
+     
+    if ( $sWhere != "" )
+    {
+        $sQuery = "
+            SELECT $sIndexColumn
+            FROM   $sTable
+            $sWhere
+        ";
+        $rResultFilterTotal = pg_query( $gaSql['link'], $sQuery ) or die(pg_last_error());
+        $iFilteredTotal = pg_num_rows($rResultFilterTotal);
+        pg_free_result( $rResultFilterTotal );
+    }
+    else
+    {
+        $iFilteredTotal = $iTotal;
+    }
 
     $output = array(
         "sEcho" => intval($_GET['sEcho']),
@@ -116,7 +140,7 @@ if($currentRoleAccess->read_access == "Y"){
     );
 
 	$no = 1;
-    while ( $aRow = mysql_fetch_array( $rResult ) )
+    while ( $aRow = pg_fetch_array($rResult, null, PGSQL_ASSOC) )
     {
         $row = array();
 		$tableroleaccess = new PoTable('user_role');
@@ -144,6 +168,10 @@ if($currentRoleAccess->read_access == "Y"){
     }
 
     echo json_encode( $output );
+
+	pg_free_result( $rResult );
+
+    pg_close( $gaSql['link'] );
 }
 }
 ?>

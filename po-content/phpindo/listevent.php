@@ -44,6 +44,8 @@
 							$idevt = $dataevent->id_event;
 							$startevt = $dataevent->start;
 							$startevt = explode(' ', $startevt);
+							$startshr = substr($startevt[0],8,2);
+							$startbshr = substr(getBulan(substr($startevt[0],5,2)),0,3);
 							$endevt = $dataevent->end;
 							$endevt = explode(' ', $endevt);
 					?>
@@ -53,28 +55,36 @@
 						<div class="column dt-sc-one-third">
 						<?php } ?>
 							<!-- **Blog-post - Starts** --> 
-							<article class="blog-post type2">
-								<!-- **entry-detail - Starts** -->
-								<div class="entry-detail">
-									<div class="entry-title">
-										<h4><a href="<?php echo "$website_url/event/$dataevent->seotitle"; ?>"><?=$dataevent->title;?></a></h4>
+							<article class="blog-post">
+								<!-- **entry-meta - Starts** -->
+								<div class="entry-meta">
+									<div class="date">
+										<p><span><?=$startshr;?></span><br/><?=$startbshr;?></p>
 									</div>
-									<div class="entry-body">
-										<p><?=cuthighlight('post', $dataevent->content, '150');?>...</p>
+									<div class="post-comments" style="color:#fff;">
+										<span class="fa fa-calendar"></span>
 									</div>
-									<div class="dt-sc-hr-invisible-very-small"></div>
-									<!-- **entry-meta-data - Starts** -->
-									<div class="entry-meta-data">
-										<p><span class="fa fa-calendar"></span><?=tgl_indo($startevt[0]);?> - <?=tgl_indo($endevt[0]);?></p>
-										<p><span class="fa fa-clock"></span>
-											<?php if($startevt[1] == "00:00:00"){ ?>
-												Seharian
-											<?php }else{ ?>
-												<?=$startevt[1];?> - <?=$endevt[1];?>
-											<?php } ?>
-										</p>
-									</div> <!-- **entry-meta-data - Ends** -->
-								</div> <!-- **entry-detail - Ends** -->
+								</div> <!-- **entry-meta - Ends** -->
+								<div class="entry-post-content">
+									<!-- **entry-detail - Starts** -->
+									<div class="entry-detail">
+										<div class="entry-title">
+											<h4><a href="<?php echo "$website_url/event/$dataevent->seotitle"; ?>"><?=cuthighlight('title', $dataevent->title, '25');?>...</a></h4>
+										</div>
+										<div class="entry-body">
+											<p style="font-size:10px; color:#478BCA; margin-bottom:5px; margin-top:5px;">
+												<span class="fa fa-calendar"></span> <?=tgl_indo($startevt[0]);?> - <?=tgl_indo($endevt[0]);?> |
+												<span class="fa fa-clock-o"></span> 
+												<?php if($startevt[1] == "00:00:00"){ ?>
+													Seharian
+												<?php }else{ ?>
+													<?=$startevt[1];?> - <?=$endevt[1];?>
+												<?php } ?>
+											</p>
+											<p><?=cuthighlight('post', $dataevent->content, '150');?>...</p>
+										</div>
+									</div> <!-- **entry-detail - Ends** -->
+								</div>
 							</article> <!-- **Blog-post - Ends** -->
 						</div>
 						<?php $nov++; } ?>

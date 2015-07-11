@@ -5,7 +5,7 @@ $site['ver']        	= '1.3';
 $site['build']      	= '0';
 $site['release']    	= '09 Februari 2015';
 
-$site['title']      	= "PHP Indonesia | Bersama Berkaya Berjaya";
+$site['title']      	= "PHP Indonesia | Bersama Berkarya Berjaya";
 $site['url']     	 	= "http://localhost/phpindonesia/";
 $site['adm']  		 	= "{$site['url']}po-admin/";
 $site['con']     	 	= "{$site['url']}po-content/";
@@ -22,9 +22,9 @@ define('PO_DIRECTORY_PATH_LIB', $dir['lib']);
 
 $db['host']          	= "localhost";
 $db['sock']          	= "";
-$db['port']          	= "";
-$db['user']          	= "root";
-$db['passwd']			= "";
+$db['port']          	= "5432";
+$db['user']          	= "postgres";
+$db['passwd']			= "postgre";
 $db['db']				= "phpindonesia";
 
 define('DATABASE_HOST', $db['host']);

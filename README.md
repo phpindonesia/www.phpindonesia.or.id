@@ -11,9 +11,9 @@ Website Resmi PHP Indonesia Community
 	```php
 	$db['host']		= "localhost";
 	$db['sock']		= "";
-	$db['port']		= "";
-	$db['user']		= "root";
-	$db['passwd']	= "";
+	$db['port']		= "5432";
+	$db['user']		= "postgres";
+	$db['passwd']	= "postgre";
 	$db['db']		= "phpindonesia";
 	```
 
@@ -38,5 +38,6 @@ Beberapa content masih dalam tahap development dan pengumpulan data
 
 **Changelog** :
 
-* 9 Juli 2015 : Menambahkan git-workflow.md dan update README.md
+* 11 Juli 2015 : Pergantian database dari mysql ke postgresql serta penyempurnaan fitur lainnya.
+* 9 Juli 2015 : Menambahkan git-workflow.md dan update README.md.
 * 8 Juli 2015 : Core awal untuk menjadi role model.

@@ -25,9 +25,9 @@ class PoSelect implements Iterator{
 	protected function _getQuery(){
 		if(!$this->_query){
 			$connection = PoConnect::getConnection();
-			$this->_query = mysql_query($this->_sql, $connection);
+			$this->_query = pg_query($connection, $this->_sql);
 			if(!$this->_query){
-				throw new Exception('Gagal membaca data dari database:'.mysql_error());
+				throw new Exception('Gagal membaca data dari database:'.pg_last_error($this->_query));
 			}
 		}
 		return $this->_query;
@@ -35,7 +35,7 @@ class PoSelect implements Iterator{
 
 	protected function _getNumResult(){
 		if(!$this->_numResult){
-			$this->_numResult = mysql_num_rows($this->_getQuery());
+			$this->_numResult = pg_num_rows($this->_getQuery());
 		}
 		return $this->_numResult;
 	}
@@ -51,7 +51,7 @@ class PoSelect implements Iterator{
 		if(isset($this->_results[$pointer])){
 			return $this->_results[$pointer];
 		}
-		$row = mysql_fetch_object($this->_getQuery());
+		$row = pg_fetch_object($this->_getQuery());
 		if($row){
 			$this->_results[$pointer] = $row;
 		}
@@ -71,7 +71,7 @@ class PoSelect implements Iterator{
 	}
 
 	function close(){
-		mysql_free_result($this->_getQuery());
+		pg_free_result($this->_getQuery());
 		PoConnect::close();
 	}
 
@@ -94,40 +94,46 @@ class PoTable {
 	}
 
 	function save(array $data){
-		$sql = "INSERT INTO ".$this->_tableName." SET";
+		$sql = "INSERT INTO ".$this->_tableName." (";
 		foreach($data as $field => $value){
-			$sql .= " ".$field."='".mysql_real_escape_string($value, PoConnect::getConnection())."',";
+			$sql .= " ".$field.",";
 		}
 		$sql = rtrim($sql, ',');
-		$result = mysql_query($sql, PoConnect::getConnection());
+		$sql .= " ) VALUES (";
+		foreach($data as $field => $value){
+			$sql .= " '".pg_escape_string($value)."',";
+		}
+		$sql = rtrim($sql, ',');
+		$sql .= " )";
+		$result = pg_query(PoConnect::getConnection(), $sql);
 		if(!$result){
-			throw new Exception('Gagal menyimpan data ke table '.$this->_tableName.': '.mysql_error());
+			throw new Exception('Gagal menyimpan data ke table '.$this->_tableName.': '.pg_last_error($result));
 		}
 	}
 
 	function update(array $data, $where = ''){
 		$sql = "UPDATE ".$this->_tableName." SET";
 		foreach($data as $field => $value){
-			$sql .= " ".$field."='".mysql_real_escape_string($value, PoConnect::getConnection())."',";
+			$sql .= " ".$field."='".pg_escape_string($value)."',";
 		}
 		$sql = rtrim($sql, ',');
 		if($where){
 			$sql .= " WHERE ".$where;
 		}
-		$result = mysql_query($sql, PoConnect::getConnection());
+		$result = pg_query(PoConnect::getConnection(), $sql);
 		if(!$result){
-			throw new Exception('Gagal mengupdate data table '.$this->_tableName.': '.mysql_error());
+			throw new Exception('Gagal mengupdate data table '.$this->_tableName.': '.pg_last_error($result));
 		}
 	}
 
 	function updateBy($field, $value, array $data){
-		$where = "".$field."='".mysql_real_escape_string($value, PoConnect::getConnection())."'";
+		$where = "".$field."='".pg_escape_string($value)."'";
 		$this->update($data, $where);
 	}
 
 	function updateByAnd($field, $value, $field2, $value2, array $data){
-		$where = "".$field."='".mysql_real_escape_string($value)."'";
-		$where .= " AND ".$field2."='".mysql_real_escape_string($value2, PoConnect::getConnection())."'";
+		$where = "".$field."='".pg_escape_string($value)."'";
+		$where .= " AND ".$field2."='".pg_escape_string($value2)."'";
 		$this->update($data, $where);
 	}
 
@@ -136,9 +142,9 @@ class PoTable {
 		if($where){
 			$sql .= " WHERE ".$where;
 		}
-		$result = mysql_query($sql, PoConnect::getConnection());
+		$result = pg_query(PoConnect::getConnection(), $sql);
 		if(!$result){
-			throw new Exception('Gagal menghapus data dari table '.$this->_tableName.': '.mysql_error());
+			throw new Exception('Gagal menghapus data dari table '.$this->_tableName.': '.pg_last_error($result));
 		}
 	}
 
@@ -173,12 +179,24 @@ class PoTable {
 	function findAllLimit($field, $value, $value2){
 		if (empty($field) || empty($value)){
 			$sql = "SELECT * FROM ".$this->_tableName."";
-			$sql .= " LIMIT ".$value2."";
+			$value2 = explode(',',$value2);
+			if ($value2[1] == '' || $value2[1] == 0 || empty($value2[1])) {
+				$sql .= " LIMIT ".$value2[0]."";
+			} else {
+				$sql .= " LIMIT ".$value2[1]."";
+				$sql .= " OFFSET ".$value2[0]."";
+			}
 			return new PoSelect($sql);		
 		}else{
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " ORDER BY ".$field." ".$value."";
-			$sql .= " LIMIT ".$value2."";
+			$value2 = explode(',',$value2);
+			if ($value2[1] == '' || $value2[1] == 0 || empty($value2[1])) {
+				$sql .= " LIMIT ".$value2[0]."";
+			} else {
+				$sql .= " LIMIT ".$value2[1]."";
+				$sql .= " OFFSET ".$value2[0]."";
+			}
 			return new PoSelect($sql);
 		}
 	}
@@ -187,13 +205,25 @@ class PoTable {
 		if (empty($field) || empty($value2)){
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field2."='".$value."'";
-			$sql .= " LIMIT ".$value3."";
+			$value3 = explode(',',$value3);
+			if ($value3[1] == '' || $value3[1] == 0 || empty($value3[1])) {
+				$sql .= " LIMIT ".$value3[0]."";
+			} else {
+				$sql .= " LIMIT ".$value3[1]."";
+				$sql .= " OFFSET ".$value3[0]."";
+			}
 			return new PoSelect($sql);		
 		}else{
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field2."='".$value."'";
 			$sql .= " ORDER BY ".$field." ".$value2."";
-			$sql .= " LIMIT ".$value3."";
+			$value3 = explode(',',$value3);
+			if ($value3[1] == '' || $value3[1] == 0 || empty($value3[1])) {
+				$sql .= " LIMIT ".$value3[0]."";
+			} else {
+				$sql .= " LIMIT ".$value3[1]."";
+				$sql .= " OFFSET ".$value3[0]."";
+			}
 			return new PoSelect($sql);
 		}
 	}
@@ -202,14 +232,26 @@ class PoTable {
 		if (empty($field) || empty($value2)){
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field2."='".$value."'";
-			$sql .= " LIMIT ".$value4."";
+			$value4 = explode(',',$value4);
+			if ($value4[1] == '' || $value4[1] == 0 || empty($value4[1])) {
+				$sql .= " LIMIT ".$value4[0]."";
+			} else {
+				$sql .= " LIMIT ".$value4[1]."";
+				$sql .= " OFFSET ".$value4[0]."";
+			}
 			return new PoSelect($sql);		
 		}else{
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field2."='".$value."'";
 			$sql .= " AND ".$field3."='".$value2."'";
 			$sql .= " ORDER BY ".$field." ".$value3."";
-			$sql .= " LIMIT ".$value4."";
+			$value4 = explode(',',$value4);
+			if ($value4[1] == '' || $value4[1] == 0 || empty($value4[1])) {
+				$sql .= " LIMIT ".$value4[0]."";
+			} else {
+				$sql .= " LIMIT ".$value4[1]."";
+				$sql .= " OFFSET ".$value4[0]."";
+			}
 			return new PoSelect($sql);
 		}
 	}
@@ -218,13 +260,25 @@ class PoTable {
 		if (empty($field) || empty($value)){
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field."='".$value."'";
-			$sql .= " LIMIT ".$value2."";
+			$value2 = explode(',',$value2);
+			if ($value2[1] == '' || $value2[1] == 0 || empty($value2[1])) {
+				$sql .= " LIMIT ".$value2[0]."";
+			} else {
+				$sql .= " LIMIT ".$value2[1]."";
+				$sql .= " OFFSET ".$value2[0]."";
+			}
 			return new PoSelect($sql);		
 		}else{
 			$sql = "SELECT * FROM ".$this->_tableName."";
 			$sql .= " WHERE ".$field."='".$value."'";
 			$sql .= " ORDER BY RAND()";
-			$sql .= " LIMIT ".$value2."";
+			$value2 = explode(',',$value2);
+			if ($value2[1] == '' || $value2[1] == 0 || empty($value2[1])) {
+				$sql .= " LIMIT ".$value2[0]."";
+			} else {
+				$sql .= " LIMIT ".$value2[1]."";
+				$sql .= " OFFSET ".$value2[0]."";
+			}
 			return new PoSelect($sql);
 		}
 	}
@@ -293,11 +347,11 @@ class PoTable {
 	}
 
 	function findStat($field1, $value1, $field2){
-		$sql = "SELECT * FROM ".$this->_tableName."";
+		$sql = "SELECT ip FROM ".$this->_tableName."";
 		$sql .= " WHERE ".$field1."='".$value1."'";
 		$sql .= " GROUP BY ".$field2."";
-		$result = mysql_query($sql, PoConnect::getConnection());
-		$result = mysql_num_rows($result);
+		$result = pg_query(PoConnect::getConnection(), $sql);
+		$result = pg_num_rows($result);
 		return $result;
 	}
 
@@ -305,7 +359,7 @@ class PoTable {
 		$sql = "SELECT SUM(".$field1.") as ".$field2." FROM ".$this->_tableName."";
 		$sql .= " WHERE ".$field3."='".$value1."'";
 		$sql .= " GROUP BY ".$field4."";
-		$result = mysql_fetch_assoc(mysql_query($sql, PoConnect::getConnection()));
+		$result = pg_fetch_assoc(pg_query(PoConnect::getConnection(), $sql));
 		$result = $result[$field2];
 		return $result;
 	}
@@ -322,13 +376,19 @@ class PoTable {
 		$jml_kata = $jml_katakan-1;
 		$sql = "SELECT * FROM ".$this->_tableName." WHERE ";
 		for ($i=0; $i<=$jml_kata; $i++){
-			$sql .= "title OR content LIKE '%$pisah_kata[$i]%'";
+			$sql .= "title OR content ILIKE '%$pisah_kata[$i]%'";
 			if ($i < $jml_kata ){
 				$sql .= " OR ";
 			}
 		}
 		$sql .= " AND active='Y' ORDER BY id_post DESC";
-		$sql .= " LIMIT ".$value2."";
+		$value2 = explode(',',$value2);
+		if ($value2[1] == '' || $value2[1] == 0 || empty($value2[1])) {
+			$sql .= " LIMIT ".$value2[0]."";
+		} else {
+			$sql .= " LIMIT ".$value2[1]."";
+			$sql .= " OFFSET ".$value2[0]."";
+		}
 		return new PoSelect($sql);
 	}
 
@@ -338,29 +398,35 @@ class PoTable {
 		$jml_kata = $jml_katakan-1; 
 		$sql = "SELECT * FROM ".$this->_tableName." WHERE (id_post < ".$value2.") AND (id_post != ".$value2.") AND (" ;
 			for ($i=0; $i<=$jml_kata; $i++){
-				$sql .= "tag LIKE '%$pisah_kata[$i]%'";
+				$sql .= "tag ILIKE '%$pisah_kata[$i]%'";
 				if ($i < $jml_kata ){
 					$sql .= " OR ";
 				}
 			}
 		$sql .= ") AND active='Y'";
 		$sql .= " ORDER BY ".$value3." ".$value4."";
-		$sql .= " LIMIT ".$value5."";
+		$value5 = explode(',',$value5);
+		if ($value5[1] == '' || $value5[1] == 0 || empty($value5[1])) {
+			$sql .= " LIMIT ".$value5[0]."";
+		} else {
+			$sql .= " LIMIT ".$value5[1]."";
+			$sql .= " OFFSET ".$value5[0]."";
+		}
 		return new PoSelect($sql);
 	}
 
 	function numRow(){
 		$sql = "SELECT * FROM ".$this->_tableName."";
-		$result = mysql_query($sql, PoConnect::getConnection());
-		$result = mysql_num_rows($result);
+		$result = pg_query(PoConnect::getConnection(), $sql);
+		$result = pg_num_rows($result);
 		return $result;
 	}
 
 	function numRowBy($field, $value){
 		$sql = "SELECT * FROM ".$this->_tableName."";
 		$sql .= " WHERE ".$field."='".$value."'";
-		$result = mysql_query($sql, PoConnect::getConnection());
-		$result = mysql_num_rows($result);
+		$result = pg_query(PoConnect::getConnection(), $sql);
+		$result = pg_num_rows($result);
 		return $result;
 	}
 	
@@ -368,8 +434,8 @@ class PoTable {
 		$sql = "SELECT * FROM ".$this->_tableName."";
 		$sql .= " WHERE ".$field."='".$value."'";
 		$sql .= " AND ".$field2."='".$value2."'";
-		$result = mysql_query($sql, PoConnect::getConnection());
-		$result = mysql_num_rows($result);
+		$result = pg_query(PoConnect::getConnection(), $sql);
+		$result = pg_num_rows($result);
 		return $result;
 	}
 
@@ -379,14 +445,14 @@ class PoTable {
 		$jml_kata = $jml_katakan-1;
 		$sql = "SELECT * FROM ".$this->_tableName." WHERE ";
 		for ($i=0; $i<=$jml_kata; $i++){
-			$sql .= "title OR content LIKE '%$pisah_kata[$i]%'";
+			$sql .= "title OR content ILIKE '%$pisah_kata[$i]%'";
 			if ($i < $jml_kata ){
 				$sql .= " OR ";
 			}
 		}
 		$sql .= " AND active='Y' ORDER BY id_post DESC";
-		$result = mysql_query($sql, PoConnect::getConnection());
-		$result = mysql_num_rows($result);
+		$result = pg_query(PoConnect::getConnection(), $sql);
+		$result = pg_num_rows($result);
 		return $result;
 	}
 }

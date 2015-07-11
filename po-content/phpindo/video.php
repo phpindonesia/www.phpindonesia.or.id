@@ -28,11 +28,11 @@
         	<div class="breadcrumb-wrapper type2">
             	<div class="container">
                 	<div class="main-title">
-                    	<h1>Galeri Photo</h1>
+                    	<h1>Galeri Video</h1>
                         <div class="breadcrumb">
                             <a href="<?=$website_url;?>">Home</a>
                             <span class="fa fa-angle-right"></span>
-                            <a href="<?=$website_url;?>/album">Galeri Photo</a>
+                            <a href="<?=$website_url;?>/valbum">Galeri Video</a>
                             <span class="fa fa-angle-right"></span>
                             <span class="current"><?=$currentAlb->title;?></span>
                         </div>
@@ -57,19 +57,13 @@
 									$tablevid = new PoTable('video');
 									$videos = $tablevid->findAllLimitBy(id_video, id_album, $idalb, DESC, "$posisi,$batas");
 									foreach($videos as $video){
-										$idalb = $video->id_album;
-										$tablecalb = new PoTable('valbum');
-										$currentCalb = $tablecalb->findBy(id_album, $idalb);
-										$currentCalb = $currentCalb->current();
-										if ($currentCalb->active == 'Y'){
-										?>
+								?>
 										<li>
 											<div class="video-container">
 												<iframe width="560" height="315" src="<?=$video->url;?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 											</div>
 										</li>
-										<?php
-										}
+								<?php
 									}
 								?>
 								</ul> <!-- **recent-gallery - Ends** -->
@@ -84,15 +78,9 @@
 									$tablevid = new PoTable('video');
 									$videos = $tablevid->findAllLimitBy(id_video, id_album, $idalb, DESC, "$posisi,$batas");
 									foreach($videos as $video){
-										$idalb = $video->id_album;
-										$tablecalb = new PoTable('valbum');
-										$currentCalb = $tablecalb->findBy(id_album, $idalb);
-										$currentCalb = $currentCalb->current();
-										if ($currentCalb->active == 'Y'){
-										?>
+								?>
 										<a href="javascript:void(0);" data-slide-index="<?=$nov;?>"><img src="<?=$website_url;?>/po-content/po-thumbs/<?=$video->picture;?>" alt="<?=$video->title;?>" /></a>
-										<?php
-										}
+								<?php
 										$nov++;
 									}
 								?>

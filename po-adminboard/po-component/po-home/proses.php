@@ -5,6 +5,7 @@ if (empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
 }else{
 include_once '../../../po-library/po-database.php';
 include_once '../../../po-library/po-function.php';
+include_once '../../../po-library/pgBackupRestore.class.php';
 
 $mod = $_POST['mod'];
 $act = $_POST['act'];
@@ -19,53 +20,20 @@ if ($mod2=='home' AND $act2=='backup'){
 		$dbusersql = DATABASE_USER;
 		$dbpasswordsql = DATABASE_PASS;
 		$dbnamesql = DATABASE_NAME;
-		$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-		mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-
-		$tables = '*';
-
-			//get all of the tables
-			if($tables == '*'){
-				$tables = array();
-				$result = mysql_query('SHOW TABLES');
-				while($row = mysql_fetch_row($result))
-				{
-					$tables[] = $row[0];
-				}
-			}else{
-				$tables = is_array($tables) ? $tables : explode(',',$tables);
-			}
-			
-			//cycle through
-			foreach($tables as $table){
-				$result = mysql_query('SELECT * FROM '.$table);
-				$num_fields = mysql_num_fields($result);
-				
-				$return.= 'DROP TABLE IF EXISTS '.'`'.$table.'`'.';';
-				$row2 = mysql_fetch_row(mysql_query('SHOW CREATE TABLE `'.$table.'`'));
-				$return.= "\n\n".$row2[1].";\n\n";
-				
-				for ($i = 0; $i < $num_fields; $i++) {
-					while($row = mysql_fetch_row($result)){
-						$return.= 'INSERT INTO `'.$table.'` VALUES(';
-						for($j=0; $j<$num_fields; $j++) {
-							$row[$j] = addslashes($row[$j]);
-							$row[$j] = preg_replace("/\r\n/","\\r\\n",$row[$j]);
-							if (isset($row[$j])) { $return.= '\''.$row[$j].'\'' ; } else { $return.= '\'\''; }
-							if ($j<($num_fields-1)) { $return.= ','; }
-						}
-						$return.= ");\n";
-					}
-				}
-				$return.="\n\n\n";
-			}
-			
-			//save file
-			header("Content-type: application/octet-stream");
-			header("Content-Disposition: attachment; filename=database-backup-".date("Y-m-d").".sql");
-			header("Pragma: no-cache");
-			header("Expires: 0");
-			print "$return";
+		$dbportsql = DATABASE_PORT;
+		function timer(){
+			$time = microtime();
+			$time = explode(" ", $time);
+			$time = $time[1] + $time[0];
+			return($time);
+		}
+		$filename = "database-backup-".date("Y-m-d").".sql";
+		$s = timer();
+		$pgBackup = new pgBackupRestore($dbhostsql, $dbusersql, $dbpasswordsql, $dbnamesql);
+		$pgBackup->UseDropTable = false;
+		$pgBackup->Backup($filename);
+		$e = timer();
+		header('location:'.$filename);
 	}else{
 		header('location:../../404.php');
 	}
@@ -95,16 +63,14 @@ elseif ($mod=='home' AND $act=='restore'){
 				$sql_filename = "$nama_file_unik";
 				$sql_contents = file_get_contents($path.$sql_filename);
 				$sql_contents = explode(";", $sql_contents);
-
 				$dbhostsql = DATABASE_HOST;
 				$dbusersql = DATABASE_USER;
 				$dbpasswordsql = DATABASE_PASS;
 				$dbnamesql = DATABASE_NAME;
-				$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-				mysql_select_db($dbnamesql, $connection) or die(mysql_error());
-
+				$dbportsql = DATABASE_PORT;
+				$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql);
 				foreach($sql_contents as $query){
-					$result = mysql_query($query);
+					pg_query($connection, $query);
 					if (!$result){
 						unlink("../../../po-content/po-upload/$nama_file_unik");
 						header('location:../../admin.php?mod='.$mod);

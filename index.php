@@ -25,8 +25,8 @@ if (!file_exists("po-library/po-config.php")){
 	$dbusersql = DATABASE_USER;
 	$dbpasswordsql = DATABASE_PASS;
 	$dbnamesql = DATABASE_NAME;
-	$connection = mysql_connect($dbhostsql, $dbusersql, $dbpasswordsql) or die(mysql_error());
-	mysql_select_db($dbnamesql, $connection) or die(mysql_error());
+	$dbportsql = DATABASE_PORT;
+	$connection = pg_connect("host=".$dbhostsql." port=".$dbportsql." dbname=".$dbnamesql." user=".$dbusersql." password=".$dbpasswordsql) or die(pg_last_error());
 
 	$table = new PoTable('theme');
 	$current = $table->findBy(active, 'Y');

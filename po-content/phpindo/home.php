@@ -25,45 +25,38 @@
 
 			<!-- **Full-width-section - Starts** -->
 			<div class="full-width-section grey1">
-            <div class="dt-sc-hr-invisible"></div> 
+				<div class="dt-sc-hr-invisible"></div> 
 				<div class="container">
                 	<h2 class="aligncenter">PHP INDONESIA</h2>
 				    <p class="middle-align">PHP Indonesia  bermaksud  menghimpun, mendorong  meningkatkan dan memanfaatkan potensi segenap pihak yang bergerak<br />di bidang Pemrograman PHP dan Pemrograman lainnya yang mendukung, untuk mewujudkan suatu kondisi yang saling melengkapi dalam rangka<br />peningkatan keahlian, profesionalisme dan semangat kerjasama.</p>	
 				    <div class="dt-sc-hr-invisible-small"></div>
                     <div class="column dt-sc-one-fourth first">
-				        <div class="dt-sc-ico-content type9">
-				            <div class="icon">
-                                <span class="fa fa-bar-chart"></span>
-				            </div>
-				            <p>Meningkatkan pertumbuhan pemrogram dan komunitas PHP di Indonesia.</p>
+				        <div class="dt-sc-donutchart-medium">
+							<div class="dt-sc-donutchart" data-percent="25" data-fgcolor="#f1c40f" data-bgcolor="#ebeff0" data-size="160" data-text="fa fa-bar-chart"></div>
+				            <p>Meningkatkan pertumbuhan pemrogram dan komunitas PHP di Indonesia</p>
 				        </div>
 				    </div>
 				    <div class="column dt-sc-one-fourth">
-				        <div class="dt-sc-ico-content type9">
-				            <div class="icon">
-                                <span class="fa fa-bolt"></span>
-				            </div>
-				            <p>Meningkatkan kemampuan dan kualitas sumber daya pemrogram berbasis PHP dalam lingkup nasional yang produktif, profesional dan berdaya saing</p>
+				        <div class="dt-sc-donutchart-medium">
+							<div class="dt-sc-donutchart" data-percent="25" data-fgcolor="#3498db" data-bgcolor="#ebeff0" data-size="160" data-text="fa fa-bolt"></div>
+				            <p>Meningkatkan kemampuan dan kualitas sumber daya pemrogram berbasis PHP dalam lingkup nasional</p>
 				        </div>
 				    </div>
 				    <div class="column dt-sc-one-fourth">
-				        <div class="dt-sc-ico-content type9">
-				            <div class="icon">
-                                <span class="fa fa-building-o"></span>
-				            </div>
+				        <div class="dt-sc-donutchart-medium">
+							<div class="dt-sc-donutchart" data-percent="25" data-fgcolor="#e74c3c" data-bgcolor="#ebeff0" data-size="160" data-text="fa fa-building-o"></div>
 				            <p>Meningkatkan kebutuhan pembangunan dan pengembangan aplikasi dan sistem informasi nasional</p>
 				        </div>
 				    </div>
 				    <div class="column dt-sc-one-fourth">
-				        <div class="dt-sc-ico-content type9 last">
-				            <div class="icon">
-                                <span class="fa fa-heartbeat"></span>
-				            </div>
+				        <div class="dt-sc-donutchart-medium last">
+							<div class="dt-sc-donutchart" data-percent="25" data-fgcolor="#34495e" data-bgcolor="#ebeff0" data-size="160" data-text="fa fa-heartbeat"></div>
 				            <p>Meningkatkan kesejahteraan anggota dalam kerangka kerjasama dan pengembangan</p>
 				        </div>
 				    </div>
                 </div>
-            <div class="dt-sc-margin50"></div>
+				<p style="clear:both;">&nbsp;</p>
+				<div class="dt-sc-margin25"></div>
             </div> <!-- **Full-width-section - Ends** -->
 
 			<!-- **Full-width-section - Starts** -->
@@ -74,10 +67,10 @@
                     <div class="dt-sc-tabs-vertical-container">
                         <!-- **dt-sc-tabs-vertical-frame - Starts** -->
                         <ul class="dt-sc-tabs-vertical-frame">
-							<li><a href="#">Introduction</a></li>
-                            <li><a href="#">Visi dan Misi</a></li>
-                            <li><a href="#">Fungsi</a></li>
-                            <li><a href="#">Kegiatan</a></li>
+							<li><a href="#"><i class="fa fa-check"></i> Introduction</a></li>
+                            <li><a href="#"><i class="fa fa-check"></i> Visi dan Misi</a></li>
+                            <li><a href="#"><i class="fa fa-check"></i> Fungsi</a></li>
+                            <li><a href="#"><i class="fa fa-check"></i> Kegiatan</a></li>
                         </ul> <!-- **dt-sc-tabs-vertical-frame - Ends** -->
 						<!-- **dt-sc-tabs-vertical-frame-content - Starts** -->
                         <div class="dt-sc-tabs-vertical-frame-content">
@@ -138,6 +131,8 @@
 							foreach($events as $event){
 								$startevt = $event->start;
 								$startevt = explode(' ', $startevt);
+								$startshr = substr($startevt[0],8,2);
+								$startbshr = substr(getBulan(substr($startevt[0],5,2)),0,3);
 								$endevt = $event->end;
 								$endevt = explode(' ', $endevt);
 					?>
@@ -147,28 +142,36 @@
 					<div class="column dt-sc-one-third">
 					<?php } ?>
                         <!-- **Blog-post - Starts** --> 
-                        <article class="blog-post type2">
-                            <!-- **entry-detail - Starts** -->
-                            <div class="entry-detail">
-                                <div class="entry-title">
-                                	<h4><a href="<?php echo "$website_url/event/$event->seotitle"; ?>"><?=$event->title;?></a></h4>
-                                </div>
-                                <div class="entry-body">
-                                	<p><?=cuthighlight('post', $event->content, '150');?>...</p>
-                                </div>
-                                <div class="dt-sc-hr-invisible-very-small"></div>
-                                <!-- **entry-meta-data - Starts** -->
-                                <div class="entry-meta-data">
-                                    <p><span class="fa fa-calendar"></span><?=tgl_indo($startevt[0]);?> - <?=tgl_indo($endevt[0]);?></p>
-                                    <p><span class="fa fa-clock"></span>
-										<?php if($startevt[1] == "00:00:00"){ ?>
-											Seharian
-										<?php }else{ ?>
-											<?=$startevt[1];?> - <?=$endevt[1];?>
-										<?php } ?>
-									</p>
-                                </div> <!-- **entry-meta-data - Ends** -->
-                            </div> <!-- **entry-detail - Ends** -->
+                        <article class="blog-post">
+							<!-- **entry-meta - Starts** -->
+	                        <div class="entry-meta">
+	                            <div class="date">
+	                                <p><span><?=$startshr;?></span><br/><?=$startbshr;?></p>
+	                            </div>
+	                            <div class="post-comments" style="color:#fff; margin-top:-25px;">
+	                                <span class="fa fa-calendar"></span>
+	                            </div>
+	                        </div> <!-- **entry-meta - Ends** -->
+							<div class="entry-post-content">
+								<!-- **entry-detail - Starts** -->
+								<div class="entry-detail">
+									<div class="entry-title">
+										<h4><a href="<?php echo "$website_url/event/$event->seotitle"; ?>"><?=cuthighlight('title', $event->title, '25');?>...</a></h4>
+									</div>
+									<div class="entry-body">
+										<p style="font-size:10px; color:#478BCA; margin-bottom:5px; margin-top:5px;">
+											<span class="fa fa-calendar"></span> <?=tgl_indo($startevt[0]);?> - <?=tgl_indo($endevt[0]);?> |
+											<span class="fa fa-clock-o"></span> 
+											<?php if($startevt[1] == "00:00:00"){ ?>
+												Seharian
+											<?php }else{ ?>
+												<?=$startevt[1];?> - <?=$endevt[1];?>
+											<?php } ?>
+										</p>
+										<p><?=cuthighlight('post', $event->content, '150');?>...</p>
+									</div>
+								</div> <!-- **entry-detail - Ends** -->
+							</div>
                         </article> <!-- **Blog-post - Ends** -->
                     </div>
 					<?php $nov++; }} else {} ?>
