@@ -45,7 +45,7 @@
 	/*----*****---- << Columns >> ----*****----*/
 	
 	.column { margin:0px 0px 0px 2%; float:left; min-height:1px; position:relative; }
-	.column.first { margin-left:0px; }	
+	.column.first { margin-left:0px; clear:both; }	
 	
 	.dt-sc-full-width, .dt-sc-one-column { width:100%; }
 	.column.dt-sc-full-width, .column.dt-sc-one-column { margin-left:0px; }

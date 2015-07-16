@@ -39,7 +39,7 @@
 						$batas = 12;
 						$posisi = $p->cariPosisi($batas);
 						$tableevt = new PoTable('event');
-						$dataevents = $tableevt->findAllLimit(id_event, "DESC", "$posisi,$batas");
+						$dataevents = $tableevt->findAllLimit(startevt, "DESC", "$posisi,$batas");
 						foreach ($dataevents as $dataevent) {
 							$idevt = $dataevent->id_event;
 							$startevt = $dataevent->startevt;
