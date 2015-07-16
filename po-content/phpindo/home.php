@@ -124,16 +124,17 @@
 				    <div class="dt-sc-margin25"></div>
 					<?php
 						$tableevent = new PoTable('event');
-						$events = $tableevent->findAllLimitBy(start, active, "Y", "DESC", "3");
+						$events = $tableevent->findAllLimitBy(startevt, active, "Y", "DESC", "3");
 						$countevents = $tableevent->numRowBy(active, 'Y');
 						if ($countevents > 0) {
 							$nov = 1;
 							foreach($events as $event){
-								$startevt = $event->start;
+								$startevt = $event->startevt;
 								$startevt = explode(' ', $startevt);
+								$startsth = substr($startevt[0],0,4);
 								$startshr = substr($startevt[0],8,2);
 								$startbshr = substr(getBulan(substr($startevt[0],5,2)),0,3);
-								$endevt = $event->end;
+								$endevt = $event->endevt;
 								$endevt = explode(' ', $endevt);
 					?>
 					<?php if ($nov == '1') { ?>
@@ -149,7 +150,7 @@
 	                                <p><span><?=$startshr;?></span><br/><?=$startbshr;?></p>
 	                            </div>
 	                            <div class="post-comments" style="color:#fff; margin-top:-25px;">
-	                                <span class="fa fa-calendar"></span>
+	                                <?=$startsth;?>
 	                            </div>
 	                        </div> <!-- **entry-meta - Ends** -->
 							<div class="entry-post-content">

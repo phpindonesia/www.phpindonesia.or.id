@@ -251,9 +251,9 @@ SELECT pg_catalog.setval('contact_id_contact_seq', 1, true);
 
 CREATE TABLE event (
     id_event integer NOT NULL,
-    title character varying(50) NOT NULL,
-    start timestamp without time zone NOT NULL,
-    "end" timestamp without time zone NOT NULL,
+    title character varying(250) NOT NULL,
+    startevt timestamp without time zone NOT NULL,
+    endevt timestamp without time zone NOT NULL,
     allday character(255) DEFAULT 'true'::bpchar NOT NULL,
     content text NOT NULL,
     seotitle character varying(100) NOT NULL,

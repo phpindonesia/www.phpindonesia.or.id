@@ -16,6 +16,43 @@ $aksi="po-component/po-event/proses.php";
 switch($_GET[act]){
 	default:
 ?>
+	<div class="block full">
+		<div class="block-title"><h2>Brute Add New</h2></div>
+		<form id="form-validation" class="form-bordered" method="post" action="<?=$aksi;?>" autocomplete="off" enctype="multipart/form-data">
+            <fieldset>
+				<input type="hidden" name="mod" value="event">
+				<input type="hidden" name="act" value="uploadgroupevent">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-6">
+							<label>Event File <span class="text-danger">*</span></label>
+							<input type="file" id="eventfile" name="eventfile" required />
+							<small>File Format : .txt, </small>
+							<small>Example : <a href="<?php echo $site['con'].'event/phpindonesia-event-2014.txt'; ?>">phpindonesia-event-2014.txt</a></small>
+						</div>
+						<div class="col-md-6">
+							<label>Color <span class="text-danger">*</span></label>
+							<select class="select-chosen-no-search" name="color" style="width:280px;">
+								<option value="#1BBAE1">default</option>
+								<option value="#888">night</option>
+								<option value="#AF64CC">amethyst</option>
+								<option value="#46B7BF">modern</option>
+								<option value="#E67E22">autumn</option>
+								<option value="#1EC1B8">flatie</option>
+								<option value="#27AE60">spring</option>
+								<option value="#F31455">fancy</option>
+								<option value="#E74C3C">fire</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-actions">
+					<button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-check"></i> Submit</button>
+					<!-- <button type="reset" class="btn btn-sm btn-danger pull-right" onclick="self.history.back()"><i class="fa fa-times"></i> Cancel</button> -->
+				</div>
+            </fieldset>
+		</form>
+	</div>
 	<div class="block block-alt-noborder full">
 		<div class="row">
 			<div class="col-md-12">

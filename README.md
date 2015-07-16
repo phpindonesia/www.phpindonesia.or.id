@@ -38,6 +38,7 @@ Beberapa content masih dalam tahap development dan pengumpulan data
 
 **Changelog** :
 
+* 16 Juli 2015 : Penambahan brute add new event pada component event di adminboard, contributor by Arya Kusuma @localhost94.
 * 11 Juli 2015 : Pergantian database dari mysql ke postgresql serta penyempurnaan fitur lainnya.
 * 9 Juli 2015 : Menambahkan git-workflow.md dan update README.md.
 * 8 Juli 2015 : Core awal untuk menjadi role model.

@@ -23,9 +23,9 @@
 			$idevt = $currentEvt->id_event;
 			$content = $currentEvt->content;
 			$content = html_entity_decode($content);
-			$startevt = $currentEvt->start;
+			$startevt = $currentEvt->startevt;
 			$startevt = explode(' ', $startevt);
-			$endevt = $currentEvt->end;
+			$endevt = $currentEvt->endevt;
 			$endevt = explode(' ', $endevt);
 		?>
 		<?php if ($currentEvt != "0"){ ?>
@@ -40,7 +40,7 @@
                             <span class="fa fa-angle-right"></span>
                             <a href="<?=$website_url;?>/listevent">Event</a>
                             <span class="fa fa-angle-right"></span>
-                            <span class="current"><?=$currentEvt->title;?></span>
+                            <span class="current">Detail Event</span>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
 				<section id="primary" class="content-full-width">
 					<article class="blog-post">
 						<div class="entry-body">
-							<?=$content;?>
+							<?=nl2br($content);?>
 						</div>
 					</article>
 				</section>

@@ -42,11 +42,12 @@
 						$dataevents = $tableevt->findAllLimit(id_event, "DESC", "$posisi,$batas");
 						foreach ($dataevents as $dataevent) {
 							$idevt = $dataevent->id_event;
-							$startevt = $dataevent->start;
+							$startevt = $dataevent->startevt;
 							$startevt = explode(' ', $startevt);
+							$startsth = substr($startevt[0],0,4);
 							$startshr = substr($startevt[0],8,2);
 							$startbshr = substr(getBulan(substr($startevt[0],5,2)),0,3);
-							$endevt = $dataevent->end;
+							$endevt = $dataevent->endevt;
 							$endevt = explode(' ', $endevt);
 					?>
 						<?php if ($nov % 3 == 1) { ?>
@@ -62,7 +63,7 @@
 										<p><span><?=$startshr;?></span><br/><?=$startbshr;?></p>
 									</div>
 									<div class="post-comments" style="color:#fff;">
-										<span class="fa fa-calendar"></span>
+										<?=$startsth;?>
 									</div>
 								</div> <!-- **entry-meta - Ends** -->
 								<div class="entry-post-content">
